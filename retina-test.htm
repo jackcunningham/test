@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<style>
+
+html {
+	font-style: 14px;
+	font-family: arial;
+}
+
+div {
+	float: left;
+	margin-right: 1em;
+}
+
+div:nth-child(odd) {
+	clear:left;
+}
+
+li {
+	float: left;
+	position: relative;
+	list-style:none;
+	padding: 0;
+	margin: 0;
+}
+
+.images {
+	
+}
+
+.images--listing { width: 180px; }
+.images--main { width: 400px; }
+.images--full { width: 800px; }
+
+li li {
+	bottom: 10px;
+	left: 10px;
+	background-color: rgba(204, 204, 204, 0.4);
+	width:60%;
+	font-size: 11px;
+}
+
+h2 {
+	border-bottom: #ddd 1px solid;
+	margin: 3em 1em 1em 0;
+	font-size: 14px;
+	padding-bottom: 0.5em;
+}
+.green {color: #093;}
+.red {color: #c00;}
+
+</style>
+
+
+
+<ul>
+	<div>
+		<h2>Fullsize (CDN), <b class="red">235Kb</b></h2>
+		<a href="http://cdn1.feelunique.com/img/products/35161/Calvin_Klein_Sheer_Beauty_Eau_De_Toilette_Spray_50ml_1380285402.png">
+		<img src="http://cdn1.feelunique.com/img/products/35161/Calvin_Klein_Sheer_Beauty_Eau_De_Toilette_Spray_50ml_1380285402.png" class="images images--full"></a>
+	</div>
+
+	<div class="images images--full">
+		<h2>Fullsize (optimised) <b class="green">30.2Kb</b></h2>
+		<a href="http://cdn1.feelunique.com/img/ads/il1443449547.jpg">
+		<img src="http://cdn1.feelunique.com/img/ads/il1443449547.jpg" class="images images--full"></a>
+	</div>
+
+	<div class="images images--main">
+		<h2>Main (CDN) <b class="red">52.9Kb</b></h2>
+		<a href="http://cdn1.feelunique.com/img/products/35161/Calvin_Klein_Sheer_Beauty_Eau_De_Toilette_Spray_50ml_1380285402.png">
+		<img src="http://cdn1.feelunique.com/img/products/35161/Calvin_Klein_Sheer_Beauty_Eau_De_Toilette_Spray_50ml_1380285402_main.jpg" class="images images--main"></a>
+	</div>
+
+	<div class="images images--main">
+		<h2>Main (optimised) <b class="green">13.2Kb</b></h2>
+		<a href="http://cdn1.feelunique.com/img/ads/il1443449502.jpg">
+		<img src="http://cdn1.feelunique.com/img/ads/il1443449502.jpg" class="images images--main"></a>
+	</div>
+
+	<div class="images images--listing">
+		<h2>Listing (CDN) <b class="red">14.3Kb</b></h2>
+		<a href="http://cdn1.feelunique.com/img/products/35161/Calvin_Klein_Sheer_Beauty_Eau_De_Toilette_Spray_50ml_1380285402.png">
+		<img src="http://cdn1.feelunique.com/img/products/35161/Calvin_Klein_Sheer_Beauty_Eau_De_Toilette_Spray_50ml_1380285402_listing.jpg" class="images images--listing"></a>
+	</div>
+
+	<div class="images images--listing">
+		<h2>Listing (optimised) <b class="green">4Kb</b></h2>
+		<a href="http://cdn1.feelunique.com/img/ads/il1443449487.jpg">
+		<img src="http://cdn1.feelunique.com/img/ads/il1443449487.jpg" class="images images--listing"></a>
+	</div>
+</ul>
