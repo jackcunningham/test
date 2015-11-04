@@ -1,0 +1,69 @@
+@mixin Table {
+
+  width: 100%;
+  clear: both;
+
+  td, th {
+    text-align: left;
+    font-weight: normal;
+    padding: 6px 4px;
+    vertical-align: bottom;
+  }
+
+  &.w05  { width:05%; }
+  &.w10  { width:10%; }
+  &.w15  { width:15%; }
+  &.w20  { width:20%; }
+  &.w25  { width:25%; }
+  &.w30  { width:30%; }
+  &.w35  { width:35%; }
+  &.w40  { width:40%; }
+  &.w45  { width:45%; }
+  &.w50  { width:50%; }
+  &.w55  { width:55%; }
+  &.w60  { width:60%; }
+  &.w65  { width:65%; }
+  &.w70  { width:70%; }
+  &.w75  { width:75%; }
+  &.w80  { width:80%; }
+  &.w85  { width:85%; }
+  &.w90  { width:90%; }
+  &.w95  { width:95%; }
+  &.w100 { width:100%; }
+
+  .Table-product {
+    text-align: left;
+  }
+
+  .Table-quantity {
+    text-align: center;
+    white-space: nowrap;
+    padding-left: $dim-base*.75;
+    padding-right: $dim-base*.75;
+  }
+
+  .Table-price {
+    text-align: right;
+    white-space: nowrap;
+    padding-left: $dim-base*.75;
+  }
+
+  .Table-total {
+    text-align: right;
+    font-size: $size-chunky;
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: $dim-base*.75;
+  }
+
+  .Table-divide td {
+    height: 20px;
+    background-image: linear-gradient(transparent 48%, $feelunique-color-structure 48%, $feelunique-color-structure 51%, transparent 51%);
+  }
+
+  .u-positive {
+    color: $feelunique-color-positive;
+  }
+
+}
+.Table {@include Table}
