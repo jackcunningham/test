@@ -36,24 +36,47 @@ html, body {
       border: none;
       margin: 10px 0; } }
   .Rforms .Rforms-input input,
-  .Rforms .Rforms-input label {
+  .Rforms .Rforms-input label,
+  .Rforms .Rforms-input select {
     border-radius: 0;
     vertical-align: top;
     height: 48px;
     line-height: 48px;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
     display: inline-block; }
+    .Rforms .Rforms-input input.u-w25,
+    .Rforms .Rforms-input label.u-w25,
+    .Rforms .Rforms-input select.u-w25 {
+      width: 25%; }
+    .Rforms .Rforms-input input.u-w30,
+    .Rforms .Rforms-input label.u-w30,
+    .Rforms .Rforms-input select.u-w30 {
+      width: 30%; }
+    .Rforms .Rforms-input input.u-w40,
+    .Rforms .Rforms-input label.u-w40,
+    .Rforms .Rforms-input select.u-w40 {
+      width: 40%; }
+    .Rforms .Rforms-input input.u-w50,
+    .Rforms .Rforms-input label.u-w50,
+    .Rforms .Rforms-input select.u-w50 {
+      width: 50%; }
+    .Rforms .Rforms-input input.u-w70,
+    .Rforms .Rforms-input label.u-w70,
+    .Rforms .Rforms-input select.u-w70 {
+      width: 70%; }
     @media screen and (min-device-width: 400px), screen and (min-device-height: 400px) and (orientation: landscape) {
       .Rforms .Rforms-input input,
-      .Rforms .Rforms-input label {
+      .Rforms .Rforms-input label,
+      .Rforms .Rforms-input select {
         background-color: transparent;
         padding-left: 10px;
         border-right: 1px solid #ddd; } }
   .Rforms .Rforms-input label {
     width: 36%;
     overflow: hidden; }
-  .Rforms .Rforms-input input {
+  .Rforms .Rforms-input input,
+  .Rforms .Rforms-input select {
     margin: 5px 0;
     height: 38px;
     line-height: 38px;
@@ -61,10 +84,16 @@ html, body {
     width: 64%;
     border: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none; }
-    .Rforms .Rforms-input input::-webkit-input-placeholder {
+    .Rforms .Rforms-input input::-webkit-input-placeholder,
+    .Rforms .Rforms-input select::-webkit-input-placeholder {
       font-weight: 400;
       color: #ccc; }
+  .Rforms .Rforms-input select {
+    color: #2b79ec;
+    background-color: transparent;
+    font-size: 1rem; }
   .Rforms .Rforms-input:first-child {
     border-top: none; }
 

@@ -31,14 +31,21 @@
     }
 
     input,
-    label {
+    label,
+    select {
       border-radius: 0;
       vertical-align: top;
       height: $dim-tap;
       line-height: $dim-tap;
-      font-size: 1em;
+      font-size: 1rem;
       font-weight: $weight-normal;
       display: inline-block;
+
+      &.u-w25 {width: 25%;}
+      &.u-w30 {width: 30%;}
+      &.u-w40 {width: 40%;}
+      &.u-w50 {width: 50%;}
+      &.u-w70 {width: 70%;}
 
       @media #{$media-full} {
         background-color: transparent;
@@ -50,9 +57,11 @@
     label {
       width: 36%;
       overflow: hidden;
+
     }
 
-    input {
+    input,
+    select {
       margin: 5px 0;
       height: $dim-tap - 10;
       line-height: $dim-tap - 10;
@@ -60,12 +69,19 @@
       width: 64%;
       border: none;
       -webkit-appearance: none;
+      -moz-appearance: none;
       appearance: none; 
 
       &::-webkit-input-placeholder {
         font-weight: $weight-normal;
         color: #ccc;
       }
+    }
+
+    select {
+      color: $feelunique-color-progress;
+      background-color: transparent;
+      font-size: 1rem;
     }
 
     &:first-child {
