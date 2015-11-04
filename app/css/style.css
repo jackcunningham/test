@@ -1,0 +1,66 @@
+html, * {
+  box-sizing: border-box; }
+
+html, body {
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  font-size: 16px; }
+  @media screen and (min-device-width: 400px), screen and (min-device-height: 400px) and (orientation: landscape) {
+    html, body {
+      background-color: #fff; } }
+
+.Rforms .Rforms-fieldset {
+  background-color: #fff;
+  border: none;
+  border-top: 1px #ddd solid;
+  border-bottom: 1px #ddd solid;
+  margin: 20px 0;
+  padding: 0 10px; }
+  @media screen and (min-device-width: 400px), screen and (min-device-height: 400px) and (orientation: landscape) {
+    .Rforms .Rforms-fieldset {
+      background-color: transparent;
+      border: none; } }
+
+.Rforms .Rforms-input {
+  display: block;
+  width: auto;
+  border-top: 1px #ddd solid; }
+  @media screen and (min-device-width: 400px), screen and (min-device-height: 400px) and (orientation: landscape) {
+    .Rforms .Rforms-input {
+      background-color: #f2f2f2;
+      border: none;
+      margin: 10px 0; } }
+  .Rforms .Rforms-input input,
+  .Rforms .Rforms-input label {
+    border-radius: 0;
+    vertical-align: top;
+    height: 48px;
+    line-height: 48px;
+    font-size: 1em;
+    font-weight: 400;
+    display: inline-block; }
+    @media screen and (min-device-width: 400px), screen and (min-device-height: 400px) and (orientation: landscape) {
+      .Rforms .Rforms-input input,
+      .Rforms .Rforms-input label {
+        background-color: transparent;
+        padding-left: 10px;
+        border-right: 1px solid #ddd; } }
+  .Rforms .Rforms-input label {
+    width: 30%;
+    overflow: hidden; }
+  .Rforms .Rforms-input input {
+    margin: 5px 0;
+    height: 38px;
+    line-height: 38px;
+    font-family: "Open Sans", sans-serif;
+    width: 70%;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none; }
+    .Rforms .Rforms-input input::-webkit-input-placeholder {
+      font-weight: 200;
+      color: #ccc; }
+  .Rforms .Rforms-input:first-child {
+    border-top: none; }

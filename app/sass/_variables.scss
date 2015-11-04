@@ -8,7 +8,7 @@ $feelunique-color-alert:         	#d72245;    // used to show action needed befo
 
 // Base dimensions
 $dim-base: 			20px;
-$dim-tap:			34px;
+$dim-tap:			48px;
 
 // Font sizing
 $size-small: 		12px;
@@ -18,5 +18,7 @@ $size-chunky: 		17px;
 $size-big: 			24px;
 
 // Misc
+$fontstack: 'Open Sans', sans-serif; 
 $transition: 0.15s ease;
 $feelunique-dropshadow: 1px 1px 2px rgba(0, 0, 0, 0.08), 2px 2px 5px rgba(0, 0, 0, 0.04);
+$media-full: "screen and (min-device-width: 400px), screen and (min-device-height: 400px) and (orientation: landscape)";

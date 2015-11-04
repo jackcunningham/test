@@ -1,11 +1,74 @@
-
-
-
 .Rforms {
 
+  .Rforms-fieldset {
+    background-color: #fff;
+    border: none;
+    border-top: 1px $feelunique-color-structure solid;
+    border-bottom: 1px $feelunique-color-structure solid;
+    margin: $dim-base 0;
+    padding: 0 $dim-base / 2;
+
+    @media #{$media-full} {
+      background-color: transparent;
+      border: none; 
+    }
+  }
+
+  .Rforms-input {
+
+    display: block;
+    width: auto;
+    border-top: 1px $feelunique-color-structure solid;
+
+    @media #{$media-full} {
+      background-color: $feelunique-color-page;
+      border: none;
+      margin: ($dim-base / 2) 0;
+    }
 
 
+    input,
+    label {
+      border-radius: 0;
+      vertical-align: top;
+      height: $dim-tap;
+      line-height: $dim-tap;
+      font-size: 1em;
+      font-weight: 400;
+      display: inline-block;
 
+      @media #{$media-full} {
+        background-color: transparent;
+        padding-left: $dim-base / 2;
+        border-right: 1px solid $feelunique-color-structure;
+      }
+    }
 
+    label {
+      width: 30%;
+      overflow: hidden;
+    }
+
+    input {
+      margin: 5px 0;
+      height: $dim-tap - 10;
+      line-height: $dim-tap - 10;
+      font-family: $fontstack;
+      width: 70%;
+      border: none;
+      -webkit-appearance: none;
+      appearance: none;
+
+      &::-webkit-input-placeholder {
+        font-weight: 200;
+        color: #ccc;
+      }
+    }
+
+    &:first-child {
+      border-top: none;
+    }
+
+  }
 
 }
