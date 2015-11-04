@@ -1,11 +1,15 @@
 .Rforms {
 
+  .Rforms-block {
+    margin: 0 ($dim-base /2);
+  }
+
   .Rforms-fieldset {
     background-color: #fff;
     border: none;
     border-top: 1px $feelunique-color-structure solid;
     border-bottom: 1px $feelunique-color-structure solid;
-    margin: $dim-base 0;
+    margin: ($dim-base / 2) 0;
     padding: 0 $dim-base / 2;
 
     @media #{$media-full} {
@@ -26,7 +30,6 @@
       margin: ($dim-base / 2) 0;
     }
 
-
     input,
     label {
       border-radius: 0;
@@ -34,7 +37,7 @@
       height: $dim-tap;
       line-height: $dim-tap;
       font-size: 1em;
-      font-weight: 400;
+      font-weight: $weight-normal;
       display: inline-block;
 
       @media #{$media-full} {
@@ -45,7 +48,7 @@
     }
 
     label {
-      width: 30%;
+      width: 36%;
       overflow: hidden;
     }
 
@@ -54,13 +57,13 @@
       height: $dim-tap - 10;
       line-height: $dim-tap - 10;
       font-family: $fontstack;
-      width: 70%;
+      width: 64%;
       border: none;
       -webkit-appearance: none;
-      appearance: none;
+      appearance: none; 
 
       &::-webkit-input-placeholder {
-        font-weight: 200;
+        font-weight: $weight-normal;
         color: #ccc;
       }
     }
@@ -68,6 +71,12 @@
     &:first-child {
       border-top: none;
     }
+
+  }
+
+  .Rforms-helper {
+    font-size: $size-tiny;
+    color: $feelunique-color-body;
 
   }
 

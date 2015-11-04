@@ -1,0 +1,19 @@
+.Wrappers {
+
+  &.Wrappers--center {
+    text-align: center;
+  }
+
+  &.Wrappers--pad {
+    padding: 0 ($dim-base / 2);
+  }
+
+  &.Wrappers--fullpad {
+    padding: 0 $dim-base;
+  }
+
+  &.Wrappers--tintbox {
+    background-color: #ccc;
+  }
+
+}

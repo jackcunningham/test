@@ -1,0 +1,18 @@
+.Pressme {
+	display: inline-block;
+	background-color: $feelunique-color-progress;
+	border-radius: 5px;
+	padding: 0 ($dim-base * 1.5);
+	line-height: $dim-tap * 1.25;
+	font-size: $size-bump;
+	font-weight: $weight-heavy; 
+	text-decoration: none;
+	color: #fff;
+	box-shadow: $feelunique-dropshadow;
+
+	&.Pressme--secondary {
+		background-color: $feelunique-color-body;
+		padding: 0 $dim-base ;
+		line-height: $dim-tap;
+	}
+}
