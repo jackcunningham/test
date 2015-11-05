@@ -41,10 +41,13 @@
       font-weight: $weight-normal;
       display: inline-block;
 
+      &.u-w20 {width: 20%;}
       &.u-w25 {width: 25%;}
       &.u-w30 {width: 30%;}
+      &.u-w33 {width: 33%;}
       &.u-w40 {width: 40%;}
       &.u-w50 {width: 50%;}
+      &.u-w60 {width: 60%;}
       &.u-w70 {width: 70%;}
 
       @media #{$media-full} {
