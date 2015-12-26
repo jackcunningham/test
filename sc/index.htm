@@ -34,15 +34,19 @@ dd.title {
 }
 
 dd.image img, dd.image iframe {transition: all 0.33s ease;
-	border: #000 0px solid;}
+	outline: #444 0px solid;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0),  0 0 0 rgba(0, 0, 0, 0);
+}
 dd.image img:hover, dd.image iframe:hover {
 	transform: scale(3);
-	transform-origin: 10% 20%
-	border: #000 20px solid;;
-}
+	transform-origin: 10% 20%;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), 2px 2px 10px rgba(0, 0, 0, 0.25);
+	}
 dd.image img.big:hover, dd.image iframe.big:hover {
 	transform: scale(5);
-	transform-origin: 60% 20%;}
+	transform-origin: 60% 20%;
+
+	}
 
 @media screen and ( max-width: 480px ) {
 	dd.image img:hover, dd.image iframe:hover, dd.image img.big:hover, dd.image iframe.big:hover {
@@ -216,7 +220,7 @@ a[href="#9"] {top:51.5%; left:14.5%;}
 			<img src="http://theonemileslide.com/wp-content/uploads/2012/09/120823-28-South-Mex58.jpg">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/j_aklRJHD88" frameborder="0" allowfullscreen></iframe>
 			<iframe class="big" width="560" height="315" src="https://www.youtube.com/embed/7NSv7Y1hSs8" frameborder="0" allowfullscreen></iframe>
-			<iframe src="https://vimeo.com/138926993#t=220" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<iframe src="https://player.vimeo.com/video/138926993#t=220" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</dd>
 
 		<dt>Closest Town</dt>
