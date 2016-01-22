@@ -1,0 +1,41 @@
+body {
+	background-color: #444;
+	text-align: center;
+	margin: 0;
+	margin-top: 10%;
+	font-family: 'open sans';
+	font-weight: 200;
+	font-size: 16px;
+}
+
+img {
+	max-width: 320px;
+	display: inline-block;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), 4px 4px 8px rgba(0, 0, 0, 0.1)
+
+}
+
+i {
+	text-align: center;
+	color: #999;
+	font-style: normal;
+	display: block;
+	margin: 1.75em 0;
+}
+
+@media screen and (max-width:480px) {
+
+	body {
+
+		margin: 0;
+	}
+
+	img {
+		display: block;
+		max-width: none;
+		width: 100%;
+	}
+
+	i { display: none;}
+
+}
