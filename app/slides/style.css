@@ -2,7 +2,7 @@ body {
 	background-color: #444;
 	text-align: center;
 	margin: 0;
-	margin-top: 10%;
+	margin-top: 60px;
 	font-family: 'open sans';
 	font-weight: 200;
 	font-size: 16px;
@@ -21,6 +21,29 @@ i {
 	font-style: normal;
 	display: block;
 	margin: 1.75em 0;
+}
+
+.egg {
+	box-sizing: border-box;
+	padding-top: 16px;
+	display: block;
+	opacity: 1;
+	overflow: hidden;
+	height:54px;
+	position: absolute;
+	top:80px;
+	left: 50%;
+	margin-left: -160px;
+	width: 240px;
+	color: rgba(0, 0, 0, 0);
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 17px;
+}
+
+.egg:hover {
+	background-color: #000;
+	color: #fff;
 }
 
 @media screen and (max-width:480px) {
