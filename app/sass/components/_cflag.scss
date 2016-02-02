@@ -1,0 +1,55 @@
+@mixin retina-flags($index) {
+
+  $cflag-base-height: -50px;
+  $cflag-papa: $cflag-base-height / 2;   // 32x24px default
+  $cflag-mama: $cflag-base-height / 3.2; // 20x15px
+  $cflag-baby: $cflag-base-height / 4;   // 16x12px
+
+  background-position: 0 round( $cflag-papa * $index );
+  &.cflag--20 { 
+    background-position: 0 round( $cflag-mama * $index ); 
+  }
+  &.cflag--16 {
+    background-position: 0 round( $cflag-baby * $index ); 
+  }
+}
+
+.cflag {
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent url(../img/cflags-64-sprite-x14.png) no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 24px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 3px 3px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  font-size: 0;
+  color: transparent;
+}
+
+.cflag.cflag--20 {
+  background-size: auto 219px;
+  width: 20px;
+  height: 15px;
+}
+
+.cflag.cflag--16 {
+  background-size: 16px;
+  width: 16px;
+  height: 12px;
+}
+
+.cflag-au { @include retina-flags(0); }
+.cflag-cn { @include retina-flags(1); }
+.cflag-de { @include retina-flags(2); }
+.cflag-es { @include retina-flags(3); }
+.cflag-eu { @include retina-flags(4); }
+.cflag-fr { @include retina-flags(5); }
+.cflag-gb { @include retina-flags(6); }
+.cflag-gg { @include retina-flags(7); }
+.cflag-ie { @include retina-flags(8); }
+.cflag-je { @include retina-flags(9); }
+.cflag-no { @include retina-flags(10); }
+.cflag-ru { @include retina-flags(11); }
+.cflag-se { @include retina-flags(12); }
+.cflag-un { @include retina-flags(13); }

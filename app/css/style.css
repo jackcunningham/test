@@ -230,456 +230,147 @@ html, body {
   .Table .u-positive {
     color: #1abc9c; }
 
-.Countryflag {
+.cflag {
   display: inline-block;
+  vertical-align: middle;
+  background: transparent url(../img/cflags-64-sprite-x14.png) no-repeat;
+  background-size: 32px;
   width: 32px;
-  height: 28px;
-  background: url(../img/flags.png) no-repeat;
-  vertical-align: middle; }
-  .Countryflag.Countryflag--ad {
-    background-position: -32px-4; }
-  .Countryflag.Countryflag--ae {
-    background-position: -64px-4; }
-  .Countryflag.Countryflag--af {
-    background-position: -96px-4; }
-  .Countryflag.Countryflag--ag {
-    background-position: -128px-4; }
-  .Countryflag.Countryflag--ai {
-    background-position: -160px-4; }
-  .Countryflag.Countryflag--al {
-    background-position: -192px-4; }
-  .Countryflag.Countryflag--am {
-    background-position: -224px-4; }
-  .Countryflag.Countryflag--an {
-    background-position: -256px-4; }
-  .Countryflag.Countryflag--ao {
-    background-position: -288px-4; }
-  .Countryflag.Countryflag--ar {
-    background-position: -320px-4; }
-  .Countryflag.Countryflag--as {
-    background-position: -352px-4; }
-  .Countryflag.Countryflag--at {
-    background-position: -384px-4; }
-  .Countryflag.Countryflag--au {
-    background-position: -416px-4; }
-  .Countryflag.Countryflag--aw {
-    background-position: -448px-4; }
-  .Countryflag.Countryflag--az {
-    background-position: 0 -32px; }
-  .Countryflag.Countryflag--ba {
-    background-position: -32px -36px; }
-  .Countryflag.Countryflag--bb {
-    background-position: -64px -36px; }
-  .Countryflag.Countryflag--bd {
-    background-position: -96px -36px; }
-  .Countryflag.Countryflag--be {
-    background-position: -128px -36px; }
-  .Countryflag.Countryflag--bf {
-    background-position: -160px -36px; }
-  .Countryflag.Countryflag--bg {
-    background-position: -192px -36px; }
-  .Countryflag.Countryflag--bh {
-    background-position: -224px -36px; }
-  .Countryflag.Countryflag--bi {
-    background-position: -256px -36px; }
-  .Countryflag.Countryflag--bj {
-    background-position: -288px -36px; }
-  .Countryflag.Countryflag--bm {
-    background-position: -320px -36px; }
-  .Countryflag.Countryflag--bn {
-    background-position: -352px -36px; }
-  .Countryflag.Countryflag--bo {
-    background-position: -384px -36px; }
-  .Countryflag.Countryflag--br {
-    background-position: -416px -36px; }
-  .Countryflag.Countryflag--bs {
-    background-position: -448px -36px; }
-  .Countryflag.Countryflag--bt {
-    background-position: 0 -64px; }
-  .Countryflag.Countryflag--bw {
-    background-position: -32px -68px; }
-  .Countryflag.Countryflag--by {
-    background-position: -64px -68px; }
-  .Countryflag.Countryflag--bz {
-    background-position: -96px -68px; }
-  .Countryflag.Countryflag--ca {
-    background-position: -128px -68px; }
-  .Countryflag.Countryflag--cd {
-    background-position: -160px -68px; }
-  .Countryflag.Countryflag--cf {
-    background-position: -192px -68px; }
-  .Countryflag.Countryflag--cg {
-    background-position: -224px -68px; }
-  .Countryflag.Countryflag--ch {
-    background-position: -256px -68px; }
-  .Countryflag.Countryflag--ci {
-    background-position: -288px -68px; }
-  .Countryflag.Countryflag--ck {
-    background-position: -320px -68px; }
-  .Countryflag.Countryflag--cl {
-    background-position: -352px -68px; }
-  .Countryflag.Countryflag--cm {
-    background-position: -384px -68px; }
-  .Countryflag.Countryflag--cn {
-    background-position: -416px -68px; }
-  .Countryflag.Countryflag--co {
-    background-position: -448px -68px; }
-  .Countryflag.Countryflag--cr {
+  height: 24px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 3px 3px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  font-size: 0;
+  color: transparent; }
+
+.cflag.cflag--20 {
+  background-size: auto 219px;
+  width: 20px;
+  height: 15px; }
+
+.cflag.cflag--16 {
+  background-size: 16px;
+  width: 16px;
+  height: 12px; }
+
+.cflag-au {
+  background-position: 0 0px; }
+  .cflag-au.cflag--20 {
+    background-position: 0 0px; }
+  .cflag-au.cflag--16 {
+    background-position: 0 0px; }
+
+.cflag-cn {
+  background-position: 0 -25px; }
+  .cflag-cn.cflag--20 {
+    background-position: 0 -16px; }
+  .cflag-cn.cflag--16 {
+    background-position: 0 -12px; }
+
+.cflag-de {
+  background-position: 0 -50px; }
+  .cflag-de.cflag--20 {
+    background-position: 0 -31px; }
+  .cflag-de.cflag--16 {
+    background-position: 0 -25px; }
+
+.cflag-es {
+  background-position: 0 -75px; }
+  .cflag-es.cflag--20 {
+    background-position: 0 -47px; }
+  .cflag-es.cflag--16 {
+    background-position: 0 -37px; }
+
+.cflag-eu {
+  background-position: 0 -100px; }
+  .cflag-eu.cflag--20 {
+    background-position: 0 -62px; }
+  .cflag-eu.cflag--16 {
+    background-position: 0 -50px; }
+
+.cflag-fr {
+  background-position: 0 -125px; }
+  .cflag-fr.cflag--20 {
+    background-position: 0 -78px; }
+  .cflag-fr.cflag--16 {
+    background-position: 0 -62px; }
+
+.cflag-gb {
+  background-position: 0 -150px; }
+  .cflag-gb.cflag--20 {
+    background-position: 0 -94px; }
+  .cflag-gb.cflag--16 {
+    background-position: 0 -75px; }
+
+.cflag-gg {
+  background-position: 0 -175px; }
+  .cflag-gg.cflag--20 {
+    background-position: 0 -109px; }
+  .cflag-gg.cflag--16 {
+    background-position: 0 -87px; }
+
+.cflag-ie {
+  background-position: 0 -200px; }
+  .cflag-ie.cflag--20 {
+    background-position: 0 -125px; }
+  .cflag-ie.cflag--16 {
     background-position: 0 -100px; }
-  .Countryflag.Countryflag--cu {
-    background-position: -32px -100px; }
-  .Countryflag.Countryflag--cv {
-    background-position: -64px -100px; }
-  .Countryflag.Countryflag--cy {
-    background-position: -98px -100px; }
-  .Countryflag.Countryflag--cz {
-    background-position: -128px -100px; }
-  .Countryflag.Countryflag--de {
-    background-position: -160px -100px; }
-  .Countryflag.Countryflag--dj {
-    background-position: -192px -100px; }
-  .Countryflag.Countryflag--dk {
-    background-position: -224px -100px; }
-  .Countryflag.Countryflag--dm {
-    background-position: -256px -100px; }
-  .Countryflag.Countryflag--do {
-    background-position: -288px -100px; }
-  .Countryflag.Countryflag--dz {
-    background-position: -320px -100px; }
-  .Countryflag.Countryflag--ec {
-    background-position: -352px -100px; }
-  .Countryflag.Countryflag--ee {
-    background-position: -384px -100px; }
-  .Countryflag.Countryflag--eg {
-    background-position: -416px -100px; }
-  .Countryflag.Countryflag--eh {
-    background-position: -448px -100px; }
-  .Countryflag.Countryflag--er {
-    background-position: 0 -128px; }
-  .Countryflag.Countryflag--es {
-    background-position: -32px -132px; }
-  .Countryflag.Countryflag--et {
-    background-position: -64px -132px; }
-  .Countryflag.Countryflag--fi {
-    background-position: -96px -132px; }
-  .Countryflag.Countryflag--fj {
-    background-position: -128px -132px; }
-  .Countryflag.Countryflag--fm {
-    background-position: -160px -132px; }
-  .Countryflag.Countryflag--fo {
-    background-position: -192px -132px; }
-  .Countryflag.Countryflag--fr {
-    background-position: -224px -132px; }
-  .Countryflag.Countryflag--ga {
-    background-position: -256px -132px; }
-  .Countryflag.Countryflag--gb {
-    background-position: -288px -132px; }
-  .Countryflag.Countryflag--gd {
-    background-position: -320px -132px; }
-  .Countryflag.Countryflag--ge {
-    background-position: -352px -132px; }
-  .Countryflag.Countryflag--gg {
-    background-position: -384px -132px; }
-  .Countryflag.Countryflag--gh {
-    background-position: -416px -132px; }
-  .Countryflag.Countryflag--gi {
-    background-position: -448px -132px; }
-  .Countryflag.Countryflag--gl {
-    background-position: 0 -160px; }
-  .Countryflag.Countryflag--gm {
-    background-position: -32px -164px; }
-  .Countryflag.Countryflag--gn {
-    background-position: -64px -164px; }
-  .Countryflag.Countryflag--gp {
-    background-position: -96px -164px; }
-  .Countryflag.Countryflag--gq {
-    background-position: -128px -164px; }
-  .Countryflag.Countryflag--gr {
-    background-position: -160px -164px; }
-  .Countryflag.Countryflag--gt {
-    background-position: -192px -164px; }
-  .Countryflag.Countryflag--gu {
-    background-position: -224px -164px; }
-  .Countryflag.Countryflag--gw {
-    background-position: -256px -164px; }
-  .Countryflag.Countryflag--gy {
-    background-position: -288px -164px; }
-  .Countryflag.Countryflag--hk {
-    background-position: -320px -164px; }
-  .Countryflag.Countryflag--hn {
-    background-position: -352px -164px; }
-  .Countryflag.Countryflag--hr {
-    background-position: -384px -164px; }
-  .Countryflag.Countryflag--ht {
-    background-position: -416px -164px; }
-  .Countryflag.Countryflag--hu {
-    background-position: -448px -164px; }
-  .Countryflag.Countryflag--id {
-    background-position: 0 -196px; }
-  .Countryflag.Countryflag--ie {
-    background-position: -32px -196px; }
-  .Countryflag.Countryflag--il {
-    background-position: -64px -196px; }
-  .Countryflag.Countryflag--im {
-    background-position: -96px -196px; }
-  .Countryflag.Countryflag--in {
-    background-position: -128px -196px; }
-  .Countryflag.Countryflag--iq {
-    background-position: -160px -196px; }
-  .Countryflag.Countryflag--ir {
-    background-position: -192px -196px; }
-  .Countryflag.Countryflag--is {
-    background-position: -224px -196px; }
-  .Countryflag.Countryflag--it {
-    background-position: -256px -196px; }
-  .Countryflag.Countryflag--je {
-    background-position: -288px -196px; }
-  .Countryflag.Countryflag--jm {
-    background-position: -320px -196px; }
-  .Countryflag.Countryflag--jo {
-    background-position: -352px -196px; }
-  .Countryflag.Countryflag--jp {
-    background-position: -384px -196px; }
-  .Countryflag.Countryflag--ke {
-    background-position: -416px -196px; }
-  .Countryflag.Countryflag--kg {
-    background-position: -448px -196px; }
-  .Countryflag.Countryflag--kh {
-    background-position: 0 -228px; }
-  .Countryflag.Countryflag--ki {
-    background-position: -32px -228px; }
-  .Countryflag.Countryflag--km {
-    background-position: -64px -228px; }
-  .Countryflag.Countryflag--kn {
-    background-position: -96px -228px; }
-  .Countryflag.Countryflag--kp {
-    background-position: -128px -228px; }
-  .Countryflag.Countryflag--kr {
-    background-position: -160px -228px; }
-  .Countryflag.Countryflag--kw {
-    background-position: -192px -228px; }
-  .Countryflag.Countryflag--ky {
-    background-position: -224px -228px; }
-  .Countryflag.Countryflag--kz {
-    background-position: -256px -228px; }
-  .Countryflag.Countryflag--la {
-    background-position: -288px -228px; }
-  .Countryflag.Countryflag--lb {
-    background-position: -320px -228px; }
-  .Countryflag.Countryflag--lc {
-    background-position: -352px -228px; }
-  .Countryflag.Countryflag--li {
-    background-position: -384px -228px; }
-  .Countryflag.Countryflag--lk {
-    background-position: -416px -228px; }
-  .Countryflag.Countryflag--lr {
-    background-position: -448px -228px; }
-  .Countryflag.Countryflag--ls {
-    background-position: 0 -260px; }
-  .Countryflag.Countryflag--lt {
-    background-position: -32px -260px; }
-  .Countryflag.Countryflag--lu {
-    background-position: -64px -260px; }
-  .Countryflag.Countryflag--lv {
-    background-position: -96px -260px; }
-  .Countryflag.Countryflag--ly {
-    background-position: -128px -260px; }
-  .Countryflag.Countryflag--ma {
-    background-position: -160px -260px; }
-  .Countryflag.Countryflag--mc {
-    background-position: -192px -260px; }
-  .Countryflag.Countryflag--md {
-    background-position: -224px -260px; }
-  .Countryflag.Countryflag--me {
-    background-position: -256px -260px; }
-  .Countryflag.Countryflag--mg {
-    background-position: -288px -260px; }
-  .Countryflag.Countryflag--mh {
-    background-position: -320px -260px; }
-  .Countryflag.Countryflag--mk {
-    background-position: -352px -260px; }
-  .Countryflag.Countryflag--ml {
-    background-position: -384px -260px; }
-  .Countryflag.Countryflag--mm {
-    background-position: -416px -260px; }
-  .Countryflag.Countryflag--mn {
-    background-position: -448px -260px; }
-  .Countryflag.Countryflag--mo {
-    background-position: 0 -288px; }
-  .Countryflag.Countryflag--mq {
-    background-position: -32px -288px; }
-  .Countryflag.Countryflag--mr {
-    background-position: -64px -288px; }
-  .Countryflag.Countryflag--ms {
-    background-position: -96px -288px; }
-  .Countryflag.Countryflag--mt {
-    background-position: -128px -288px; }
-  .Countryflag.Countryflag--mu {
-    background-position: -160px -288px; }
-  .Countryflag.Countryflag--mv {
-    background-position: -192px -288px; }
-  .Countryflag.Countryflag--mw {
-    background-position: -224px -288px; }
-  .Countryflag.Countryflag--mx {
-    background-position: -256px -288px; }
-  .Countryflag.Countryflag--my {
-    background-position: -288px -288px; }
-  .Countryflag.Countryflag--mz {
-    background-position: -320px -288px; }
-  .Countryflag.Countryflag--na {
-    background-position: -352px -288px; }
-  .Countryflag.Countryflag--nc {
-    background-position: -384px -288px; }
-  .Countryflag.Countryflag--ne {
-    background-position: -416px -288px; }
-  .Countryflag.Countryflag--ng {
-    background-position: -448px -288px; }
-  .Countryflag.Countryflag--ni {
-    background-position: 0 -324px; }
-  .Countryflag.Countryflag--nl {
-    background-position: -32px -324px; }
-  .Countryflag.Countryflag--no {
-    background-position: -64px -324px; }
-  .Countryflag.Countryflag--np {
-    background-position: -96px -324px; }
-  .Countryflag.Countryflag--nr {
-    background-position: -128px -324px; }
-  .Countryflag.Countryflag--nz {
-    background-position: -160px -324px; }
-  .Countryflag.Countryflag--om {
-    background-position: -192px -324px; }
-  .Countryflag.Countryflag--pa {
-    background-position: -224px -324px; }
-  .Countryflag.Countryflag--pe {
-    background-position: -256px -324px; }
-  .Countryflag.Countryflag--pf {
-    background-position: -288px -324px; }
-  .Countryflag.Countryflag--pg {
-    background-position: -320px -324px; }
-  .Countryflag.Countryflag--ph {
-    background-position: -352px -324px; }
-  .Countryflag.Countryflag--pk {
-    background-position: -384px -324px; }
-  .Countryflag.Countryflag--pl {
-    background-position: -416px -324px; }
-  .Countryflag.Countryflag--pr {
-    background-position: -448px -324px; }
-  .Countryflag.Countryflag--ps {
-    background-position: 0 -356px; }
-  .Countryflag.Countryflag--pt {
-    background-position: -32px -356px; }
-  .Countryflag.Countryflag--pw {
-    background-position: -64px -356px; }
-  .Countryflag.Countryflag--py {
-    background-position: -96px -356px; }
-  .Countryflag.Countryflag--qa {
-    background-position: -128px -356px; }
-  .Countryflag.Countryflag--re {
-    background-position: -160px -356px; }
-  .Countryflag.Countryflag--ro {
-    background-position: -192px -356px; }
-  .Countryflag.Countryflag--rs {
-    background-position: -224px -356px; }
-  .Countryflag.Countryflag--ru {
-    background-position: -256px -356px; }
-  .Countryflag.Countryflag--rw {
-    background-position: -288px -356px; }
-  .Countryflag.Countryflag--sa {
-    background-position: -320px -356px; }
-  .Countryflag.Countryflag--sb {
-    background-position: -352px -356px; }
-  .Countryflag.Countryflag--sc {
-    background-position: -384px -356px; }
-  .Countryflag.Countryflag--sd {
-    background-position: -416px -356px; }
-  .Countryflag.Countryflag--se {
-    background-position: -448px -356px; }
-  .Countryflag.Countryflag--sg {
-    background-position: 0 -388px; }
-  .Countryflag.Countryflag--si {
-    background-position: -32px -388px; }
-  .Countryflag.Countryflag--sk {
-    background-position: -64px -388px; }
-  .Countryflag.Countryflag--sl {
-    background-position: -96px -388px; }
-  .Countryflag.Countryflag--sm {
-    background-position: -128px -388px; }
-  .Countryflag.Countryflag--sn {
-    background-position: -160px -388px; }
-  .Countryflag.Countryflag--so {
-    background-position: -192px -388px; }
-  .Countryflag.Countryflag--sr {
-    background-position: -224px -388px; }
-  .Countryflag.Countryflag--st {
-    background-position: -256px -388px; }
-  .Countryflag.Countryflag--sv {
-    background-position: -288px -388px; }
-  .Countryflag.Countryflag--sy {
-    background-position: -320px -388px; }
-  .Countryflag.Countryflag--sz {
-    background-position: -352px -388px; }
-  .Countryflag.Countryflag--tc {
-    background-position: -384px -388px; }
-  .Countryflag.Countryflag--td {
-    background-position: -416px -388px; }
-  .Countryflag.Countryflag--tg {
-    background-position: -448px -388px; }
-  .Countryflag.Countryflag--th {
-    background-position: 0 -420px; }
-  .Countryflag.Countryflag--tj {
-    background-position: -32px -420px; }
-  .Countryflag.Countryflag--tl {
-    background-position: -64px -420px; }
-  .Countryflag.Countryflag--tm {
-    background-position: -96px -420px; }
-  .Countryflag.Countryflag--tn {
-    background-position: -128px -420px; }
-  .Countryflag.Countryflag--to {
-    background-position: -160px -420px; }
-  .Countryflag.Countryflag--tr {
-    background-position: -192px -420px; }
-  .Countryflag.Countryflag--tt {
-    background-position: -224px -420px; }
-  .Countryflag.Countryflag--tv {
-    background-position: -256px -420px; }
-  .Countryflag.Countryflag--tw {
-    background-position: -288px -420px; }
-  .Countryflag.Countryflag--tz {
-    background-position: -320px -420px; }
-  .Countryflag.Countryflag--ua {
-    background-position: -352px -420px; }
-  .Countryflag.Countryflag--ug {
-    background-position: -384px -420px; }
-  .Countryflag.Countryflag--us {
-    background-position: -416px -420px; }
-  .Countryflag.Countryflag--uy {
-    background-position: -448px -420px; }
-  .Countryflag.Countryflag--uz {
-    background-position: 0 -452px; }
-  .Countryflag.Countryflag--va {
-    background-position: -32px -452px; }
-  .Countryflag.Countryflag--vc {
-    background-position: -64px -452px; }
-  .Countryflag.Countryflag--ve {
-    background-position: -96px -452px; }
-  .Countryflag.Countryflag--vg {
-    background-position: -128px -452px; }
-  .Countryflag.Countryflag--vi {
-    background-position: -160px -452px; }
-  .Countryflag.Countryflag--vn {
-    background-position: -192px -452px; }
-  .Countryflag.Countryflag--vu {
-    background-position: -224px -452px; }
-  .Countryflag.Countryflag--ws {
-    background-position: -256px -452px; }
-  .Countryflag.Countryflag--ye {
-    background-position: -288px -452px; }
-  .Countryflag.Countryflag--za {
-    background-position: -320px -452px; }
-  .Countryflag.Countryflag--zm {
-    background-position: -352px -452px; }
-  .Countryflag.Countryflag--zw {
-    background-position: -384px -452px; }
+
+.cflag-je {
+  background-position: 0 -225px; }
+  .cflag-je.cflag--20 {
+    background-position: 0 -141px; }
+  .cflag-je.cflag--16 {
+    background-position: 0 -112px; }
+
+.cflag-no {
+  background-position: 0 -250px; }
+  .cflag-no.cflag--20 {
+    background-position: 0 -156px; }
+  .cflag-no.cflag--16 {
+    background-position: 0 -125px; }
+
+.cflag-ru {
+  background-position: 0 -275px; }
+  .cflag-ru.cflag--20 {
+    background-position: 0 -172px; }
+  .cflag-ru.cflag--16 {
+    background-position: 0 -137px; }
+
+.cflag-se {
+  background-position: 0 -300px; }
+  .cflag-se.cflag--20 {
+    background-position: 0 -187px; }
+  .cflag-se.cflag--16 {
+    background-position: 0 -150px; }
+
+.cflag-un {
+  background-position: 0 -325px; }
+  .cflag-un.cflag--20 {
+    background-position: 0 -203px; }
+  .cflag-un.cflag--16 {
+    background-position: 0 -162px; }
+
+.multi-select {
+  display: inline-block;
+  margin: 3em;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15), inset 2px 2px 9px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  overflow: hidden; }
+  .multi-select input[type=checkbox] {
+    display: none; }
+  .multi-select input[type=checkbox] + label {
+    display: block;
+    font-size: 13px;
+    padding: 6px 24px 6px 12px;
+    margin: 0;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: background-color 0.05s ease;
+    -webkit-user-select: none;
+    user-select: none; }
+  .multi-select input[type=checkbox]:checked + label {
+    background-color: rgba(102, 153, 204, 0.5);
+    margin: 0; }
 
 /*===================================================/
 	Utilities
