@@ -1,0 +1,17 @@
+html, * {
+	box-sizing: border-box;
+}
+
+html, body {
+	background-color: $feelunique-color-page;
+	margin: 0;
+	font-family: $fontstack; 
+	font-weight: $weight-normal;
+	font-size: 16px;
+
+	@media #{$media-full} {
+		background-color: #fff;
+	}
+
+}
+

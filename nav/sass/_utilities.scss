@@ -1,0 +1,74 @@
+/*===================================================/
+	Utilities
+	Helper classes for use inline in the mark-up 
+/===================================================*/
+
+
+/* Floats */
+
+.u-pull-left {float: left !important;}
+.u-pull-right {float: right !important;}
+
+/* Add/remove margins */
+
+.u-push {margin: $dim-base !important;}
+.u-push-top {margin-top: $dim-base !important;}
+.u-push-right {margin-right: $dim-base !important;}
+.u-push-bottom {margin-bottom: $dim-base !important;}
+.u-push-left {margin-left: $dim-base !important;}
+.u-push-vertical {margin-top: $dim-base !important; margin-bottom: $dim-base !important;}
+.u-push-horizontal {margin-left: $dim-base !important; margin-right: $dim-base !important;}
+
+.u-flush {margin: 0 !important;}
+.u-flush-top {margin-top: 0 !important;}
+.u-flush-right {margin-right: 0 !important;}
+.u-flush-bottom {margin-bottom: 0 !important;}
+.u-flush-left {margin-left: 0 !important;}
+.u-flush-vertical {margin-top: 0 !important; margin-bottom: 0 !important;}
+.u-flush-horizontal {margin-left: 0 !important; margin-right: 0 !important;}
+
+/* Add/remove padding */
+
+.u-soft {padding: $dim-base !important;}
+.u-soft-top {padding-top: $dim-base !important;}
+.u-soft-right {padding-right: $dim-base !important;}
+.u-soft-bottom {padding-bottom: $dim-base !important;}
+.u-soft-left {padding-left: $dim-base !important;}
+.u-soft-vertical {padding-top: $dim-base !important; padding-bottom: $dim-base !important;}
+.u-soft-horizontal {padding-left: $dim-base !important; padding-right: $dim-base !important;}
+
+.u-hard {padding: 0 !important;}
+.u-hard-top {padding-top: 0 !important;}
+.u-hard-right {padding-right: 0 !important;}
+.u-hard-bottom {padding-bottom: 0 !important;}
+.u-hard-left {padding-left: 0 !important;}
+.u-hard-vertical {padding-top: 0 !important; padding-bottom: 0 !important;}
+.u-hard-horizontal {padding-left: 0 !important; padding-right: 0 !important;}
+
+/*====================/
+	Text
+/====================*/
+
+.u-text-left {text-align: left !important;}
+.u-text-right {text-align: right !important;}
+.u-text-center {text-align: center !important;}
+
+.u-nobr, .u-nowrap {white-space: nowrap;}
+.u-playfair { font-family: "Playfair Display", Georgia, serif; }
+
+
+/*====================/
+	Display
+/====================*/
+
+.u-middle-table {display: table; width:100%; height:100%;}
+.u-middle-cell {display: table-cell; vertical-align:middle; width:100%; height:100%;}
+.u-inline-block {display: inline-block;}
+.u-link {text-decoration: underline;}
+
+
+/*====================/
+	Interactions
+/====================*/
+
+.is-hidden {display:none !important;}

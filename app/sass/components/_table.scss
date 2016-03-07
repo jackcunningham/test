@@ -42,7 +42,8 @@
     padding-right: $dim-base*.75;
   }
 
-  .Table-price {
+  .Table-price,
+  .Table-numeric {
     text-align: right;
     white-space: nowrap;
     padding-left: $dim-base*.75;

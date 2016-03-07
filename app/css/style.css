@@ -105,7 +105,8 @@ html, body {
   .Rforms .Rforms-input select {
     color: #2b79ec;
     background-color: transparent;
-    font-size: 1rem; }
+    font-size: 1rem;
+    text-align: right; }
   .Rforms .Rforms-input:first-child {
     border-top: none; }
 
@@ -214,7 +215,8 @@ html, body {
     white-space: nowrap;
     padding-left: 15px;
     padding-right: 15px; }
-  .Table .Table-price {
+  .Table .Table-price,
+  .Table .Table-numeric {
     text-align: right;
     white-space: nowrap;
     padding-left: 15px; }

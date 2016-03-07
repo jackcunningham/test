@@ -1,0 +1,19 @@
+@mixin Container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: $dim-base;
+  clear: both;
+
+  &.Container--page {
+    background-color: #fff;
+    border: $feelunique-color-structure 1px solid;
+    box-shadow: $feelunique-dropshadow;
+    -webkit-box-shadow: $feelunique-dropshadow;
+  }
+
+  &.Container--tintbox {
+    background-color: #ccc;
+  }
+
+}
+.Container {@include Container}
