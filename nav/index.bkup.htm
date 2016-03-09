@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<title>Mobile Nav</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<div class="Navigation Navigation--deskto">
+
+<span class="Navigation-burger">Menu</span>
+
+<ul class="Navigation-menu">
+  <li class="u-dt-hide has-more"><a href="">Departments</a>
+    <ul>
+      <li><a href="">Fragrance</a></li>
+      <li><a href="">Hair</a></li>
+      <li><a href="">Skin, Bath &amp; Body</a></li>
+      <li><a href="">Makeup</a></li>
+      <li><a href="">Nails</a></li>
+      <li><a href="">Electricals</a></li>
+      <li class="has-more"><a href="">More departments...</a>
+        <ul>
+          <li><a href="">Healthy Living</a></li>
+          <li><a href="">Mens</a></li>
+          <li><a href="">Sun &amp; Tan</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="u-dt-hide has-more"><a href="">Shop by...</a>
+    <ul>
+      <li><a href="">Brands A-Z</a></li>
+      <li class="has-more"><a href="">Offers</a>
+        <ul>
+          <li><a href="">3 for 2</a></li>
+          <li><a href="">Free gifts</a></li>
+          <li><a href="">value sets &amp; supersizes</a></li>
+        </ul>
+      </li>
+      <li><a href="">Gifts</a></li>
+      <li><a href="">What's new</a></li>
+      <li><a href="">Pic'n'Mix Samples Selection</a></li>
+    </ul>
+  </li>
+  <li class="u-dt-hide"><a href="">Featured event shop</a></li>
+  <li class="has-more"><a href="">My Account</a>
+    <ul>
+      <li><a href="">My Orders</a>
+      <li><a href="">Product Subscriptions</a>
+      <li><a href="">Wishlists</a>
+      <li><a href="">Favourites</a>
+      <li class="u-dt-hide"><a href="">Previous Purchases</a>
+      <li><a href="">My Offers</a>
+      <li class="u-dt-hide"><a href="">My Discount Vouchers</a>
+      <li><a href="">Suggestions on/off</a>
+      <li class="u-divide"><a href="">Account Details</a>
+      <li class="u-dt-hide"><a href="">Profile builder</a>
+      <li class="u-dt-hide"><a href="">Contact Preferences</a>
+      <li><a href="">Linked Social Accounts</a>
+      <li><a href="">Recommend a friend</a>
+      <li><a href="">Beauty Personality Quiz</a>
+      <li class="u-dt-hide"><a href="">Support tickets</a>
+      <li class="u-divide"><a href="">Help and advice</a>
+      <li><a href="">Not Jack? Sign out</a>
+    </ul>
+  </li>
+</ul>
+
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+</div>
+
+<script>
+$('.Navigation-menu ul').addClass('is-inactive').prepend('<li class="Navigation-back"><a href="">&lt; Back</a></li>');
+
+$('.has-more > a').on('click', function(e) {
+  e.preventDefault();
+  $(this).parent().parent().addClass('is-fading');
+  $(this).next().removeClass('is-inactive');
+
+});
+
+$('.Navigation-back a').on('click', function(e) {
+  e.preventDefault();
+  $(this).parent().parent().addClass('is-inactive');
+});
+
+</script>
+
+
