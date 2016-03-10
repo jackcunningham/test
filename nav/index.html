@@ -37,7 +37,7 @@
         </li>
       </ul>
     </li>
-    <li class="u-dt-hide u-tb-expand"><a href="">Summer Sale</a></li>
+    <li class="u-dt-hide u-tb-expand"><a href="">Summer Shop</a></li>
     <li class="u-dt-hide has-more"><a href="">Shop by...</a>
       <ul>
         <li><a href="">Brands A-Z</a></li>
@@ -133,7 +133,7 @@ $('.Navigation-menu ul').addClass('is-inactive').prepend('<li class="Navigation-
 
 // Show nav
 $('.Navigation-burger').css('cursor','pointer');
-$('.Navigation-burger').on('touchstart click', function() {
+$('.Navigation-burger').on('touchstart', function() {
   alert("shit has happened");
   $('.Navigation-menu').toggleClass('is-minimised');
   $('.Navigation-menu ul').addClass('is-inactive');
@@ -142,7 +142,7 @@ $('.Navigation-burger').on('touchstart click', function() {
 
 // Sub nav
 $('.has-more > a').css('cursor','pointer');
-$('.has-more > a').on('touchstart click', function(e) {
+$('.has-more > a').on('touchstart', function(e) {
   e.preventDefault();
   //var subTitle = $(this).text();
   //$(this).parent().children().prepend(subTitle)
@@ -157,7 +157,7 @@ $('.has-more > a').on('touchstart click', function(e) {
 
 // Back up
 $('.Navigation-back a').css('cursor','pointer');
-$('.Navigation-back a').on('touchstart click', function(e) {
+$('.Navigation-back a').on('touchstart', function(e) {
   e.preventDefault();
   $('.is-fading').removeClass('is-fading');
   $(this).parent().parent().addClass('is-inactive');
