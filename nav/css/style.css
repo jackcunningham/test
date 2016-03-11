@@ -57,19 +57,9 @@ b, strong {
   -webkit-overflow-scrolling: touch;
   position: absolute;
   top: 0; }
-  .Navigation .Navigation-burger {
-    overflow: touch;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    padding: 0 1.25rem;
-    line-height: 44px;
-    cursor: pointer;
-    background-color: #fff;
-    z-index: 5;
-    webkit-transform: translate3d(0, 0, 0);
-    transition: opacity 0.25s ease; }
+  @media screen and (min-device-width: 400px), screen and (min-device-height: 400px) and (orientation: landscape) {
+    .Navigation {
+      max-width: 280px; } }
   .Navigation .Navigation-search input {
     display: block;
     width: 93%;
@@ -94,9 +84,6 @@ b, strong {
     background-color: #f2f2f2;
     z-index: 2;
     transition: all 0.25s ease; }
-    @media screen and (min-device-width: 400px), screen and (min-device-height: 400px) and (orientation: landscape) {
-      .Navigation ul.Navigation-menu {
-        max-width: 280px; } }
     .Navigation ul.Navigation-menu li {
       line-height: 44px;
       transition: all 0.45s ease; }
@@ -137,8 +124,8 @@ b, strong {
   .Navigation .is-fading > a {
     text-indent: -2.5em; }
   .Navigation .is-minimised {
-    -webkit-transform: translateX(-110%);
-    transform: translateX(-110%); }
+    -webkit-transform: translateX(-115%);
+    transform: translateX(-115%); }
   .Navigation .u-divide {
     border-top: 1px solid rgba(0, 0, 0, 0.1); }
   .Navigation.Navigation--desktop .u-dt-hide {
@@ -155,6 +142,19 @@ b, strong {
   z-index: 5;
   text-align: center;
   box-shadow: 0 0 0 1px #f2f2f2; }
+  .header .header-burger {
+    overflow: touch;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding: 0 1.25rem;
+    line-height: 44px;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 5;
+    -webkit-transform: translate3d(0, 0, 0);
+    transition: opacity 0.25s ease; }
   .header a.header-logo {
     display: inline-block;
     text-transform: uppercase;
@@ -176,6 +176,7 @@ b, strong {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-overflow: auto;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: -1;
@@ -201,7 +202,19 @@ b, strong {
             font-size: 16px;
             padding: 0.75rem;
             border: none;
-            background-color: #f2f2f2; }
+            border: 1px solid #ddd; }
+          .page .page-nav > ul > li:first-child input::-webkit-input-placeholder {
+            font-weight: 200;
+            color: #777; }
+          .page .page-nav > ul > li:first-child input:-moz-placeholder {
+            font-weight: 200;
+            color: #777; }
+          .page .page-nav > ul > li:first-child input::-moz-placeholder {
+            font-weight: 200;
+            color: #777; }
+          .page .page-nav > ul > li:first-child input:-ms-input-placeholder {
+            font-weight: 200;
+            color: #777; }
         .page .page-nav ul, .page .page-nav li, .page .page-nav li a {
           list-style: none;
           margin: 0;

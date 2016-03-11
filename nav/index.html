@@ -6,14 +6,18 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-<div class="Navigation Navigation--deskto">
+
 
   <div class="header">
-    <a href class="header-bag">Bag (9)</a>
-    <a href class="header-logo">Feel<b>unique</b></a>
+    <a href="" class="header-bag">Bag (9)</a>
+    <a href="" class="header-logo">Feel<b>unique</b></a>
+    <span class="header-burger">Menu</span>
   </div>
 
-  <span class="Navigation-burger">Menu</span>
+
+
+<div class="Navigation Navigation--deskto">
+
 
   <ul class="Navigation-menu is-minimised">
     <li class="u-dt-hide u-tb-expand Navigation-search"><input type="text" placeholder="What are you looking for?"></li>
@@ -138,8 +142,8 @@ $('.Navigation-menu ul').addClass('is-inactive').prepend('<li class="Navigation-
 //Listeners
 
 // Show nav
-$('.Navigation-burger').on('click', function() {
-  $('.Navigation-burger').toggleClass('is-active');
+$('.header-burger').on('click', function() {
+  $('.header-burger').toggleClass('is-active');
   $('.Navigation-menu').toggleClass('is-minimised');
   $('.Navigation-menu ul').addClass('is-inactive');
   $('.is-fading').removeClass('is-fading');
