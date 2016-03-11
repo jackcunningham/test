@@ -134,9 +134,8 @@ $('.Navigation-menu ul').addClass('is-inactive').prepend('<li class="Navigation-
 //Listeners
 
 // Show nav
-$('.Navigation-burger').css('cursor','pointer');
-$('.Navigation-burger').on('click touchstart', function() {
-  alert("fired");
+$('.Navigation-burger').on('click', function() {
+  $('.Navigation-burger').toggleClass('is-active');
   $('.Navigation-menu').toggleClass('is-minimised');
   $('.Navigation-menu ul').addClass('is-inactive');
   $('.is-fading').removeClass('is-fading');
@@ -144,7 +143,7 @@ $('.Navigation-burger').on('click touchstart', function() {
 
 // Sub nav
 $('.has-more > a').css('cursor','pointer');
-$('.has-more > a').on('click touchstart', function(e) {
+$('.has-more > a').on('click', function(e) {
   e.preventDefault();
   //var subTitle = $(this).text();
   //$(this).parent().children().prepend(subTitle)
@@ -159,7 +158,7 @@ $('.has-more > a').on('click touchstart', function(e) {
 
 // Back up
 $('.Navigation-back a').css('cursor','pointer');
-$('.Navigation-back a').on('click touchstart', function(e) {
+$('.Navigation-back a').on('click', function(e) {
   e.preventDefault();
   $('.is-fading').removeClass('is-fading');
   $(this).parent().parent().addClass('is-inactive');
