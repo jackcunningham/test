@@ -62,7 +62,10 @@ a {
     line-height: 48px;
     cursor: pointer;
     background-color: #f2f2f2;
-    z-index: 5; }
+    z-index: 500; }
+  .Navigation .Navigation-burger:hover, .Navigation .Navigation-burger:active  {
+    background-color: #369;
+  }
   .Navigation .Navigation-search input {
     display: block;
     width: 93%;
