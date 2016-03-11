@@ -16,10 +16,10 @@
 
 
 
-<div class="Navigation Navigation--deskto">
+<div class="Navigation Navigation--deskto is-minimised">
 
 
-  <ul class="Navigation-menu is-minimised">
+  <ul class="Navigation-menu">
     <li class="u-dt-hide u-tb-expand Navigation-search"><input type="text" placeholder="What are you looking for?"></li>
     <li class="u-dt-hide has-more"><a href="">Departments</a>
       <ul class="u-tb-expand">
@@ -144,9 +144,10 @@ $('.Navigation-menu ul').addClass('is-inactive').prepend('<li class="Navigation-
 // Show nav
 $('.header-burger').on('click', function() {
   $('.header-burger').toggleClass('is-active');
-  $('.Navigation-menu').toggleClass('is-minimised');
+  $('.Navigation').toggleClass('is-minimised');
   $('.Navigation-menu ul').addClass('is-inactive');
   $('.is-fading').removeClass('is-fading');
+  $('.page').toggleClass('.is-fixed');
 });
 
 // Sub nav
