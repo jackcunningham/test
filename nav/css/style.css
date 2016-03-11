@@ -113,7 +113,8 @@ b, strong {
       padding-top: 44px;
       background-color: #f2f2f2;
       transition: all 0.45s ease;
-      z-index: 2; }
+      z-index: 2;
+      box-shadow: -1px 0 0 #777, -4px 0 15px rgba(0, 0, 0, 0.06); }
     .Navigation ul.Navigation-menu li.has-more > a:after {
       position: absolute;
       right: 20px;
@@ -131,8 +132,8 @@ b, strong {
   .Navigation .is-active {
     background-color: #f2f2f2; }
   .Navigation .is-inactive {
-    -webkit-transform: translateX(110%);
-    transform: translateX(110%); }
+    -webkit-transform: translateX(115%);
+    transform: translateX(115%); }
   .Navigation .is-fading > a {
     text-indent: -2.5em; }
   .Navigation .is-minimised {
@@ -176,7 +177,6 @@ b, strong {
   top: 0;
   left: 0;
   overflow-y: scroll;
-  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   z-index: -1;
   background-color: #fff; }

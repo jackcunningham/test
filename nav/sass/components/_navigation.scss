@@ -81,7 +81,7 @@
       background-color: $feelunique-color-page;
       transition: all 0.45s ease;
       z-index: 2;
-      //box-shadow: -1px 0 0 $feelunique-color-body, -15px 0 35px rgba(0, 0, 0, 0.06);
+      box-shadow: -1px 0 0 $feelunique-color-body, -4px 0 15px rgba(0, 0, 0, 0.06);
 
     }
 
@@ -116,8 +116,8 @@
   }
 
   .is-inactive {
-    -webkit-transform: translateX(110%);
-    transform: translateX(110%);
+    -webkit-transform: translateX(115%);
+    transform: translateX(115%);
     //opacity: 0.5;
   }
 
@@ -186,7 +186,6 @@
   top: 0;
   left: 0;
   overflow-y: scroll;
-  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   z-index: -1;
   background-color: #fff;
