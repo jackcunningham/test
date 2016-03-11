@@ -143,10 +143,13 @@ $('.Navigation-menu ul').addClass('is-inactive').prepend('<li class="Navigation-
 
 // Show nav
 $('.header-burger').on('click', function() {
+  // make burger grey
   $('.header-burger').toggleClass('is-active');
   $('.Navigation').toggleClass('is-minimised');
   $('.Navigation-menu ul').addClass('is-inactive');
+  // reset when reusing
   $('.is-fading').removeClass('is-fading');
+  // prevent scrolling of content when fullscreen
   $('.page').toggleClass('.is-fixed');
 });
 
@@ -157,7 +160,11 @@ $('.has-more > a').on('click', function(e) {
   //var subTitle = $(this).text();
   //$(this).parent().children().prepend(subTitle)
   $(this).parent().parent().children('li').addClass('is-fading');
-  $(this).next().removeClass('is-inactive');
+  $(this).next().removeClass('is-inactive').scrollTop(0);
+
+  // for landscape iOS, scrollback to top
+  $('.Navigation-menu, .Navigation, .Navigation-menu ul').scrollTop(0);
+
   
   // Resize the nav height
   //var listHeight = $(this).next()[0].clientHeight - 48;
