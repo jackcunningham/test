@@ -83,8 +83,7 @@
     }
 
     li.Navigation-back a {
-      //background-color: rgba(0, 0, 0, 0.2);
-      background-color: #ccc;
+      background-color: rgba(0, 0, 0, 0.15);
       margin: 8px 7px 7px 7px;
     }
 
@@ -97,10 +96,6 @@
 
     }
 
-  }
-
-  .is-active {
-    background-color: $feelunique-color-page;
   }
 
   .is-inactive {
@@ -183,6 +178,10 @@
     right: 5%;
     z-index: 3;
   }
+
+  .is-active {
+    background-color: $feelunique-color-page;
+  }
 }
 
 
@@ -250,10 +249,6 @@
 
         }
 
-        input::-webkit-input-placeholder {font-weight: 200; color: #ccc}
-        input:-moz-placeholder {font-weight: 200; color: #ccc}
-        input::-moz-placeholder {font-weight: 200; color: #ccc}
-        input:-ms-input-placeholder {font-weight: 200; color: #ccc}
       }
 
       ul, li, li a {

@@ -28,3 +28,8 @@ a {
 
 b, strong {font-weight: 500;}
 
+input::-webkit-input-placeholder {font-weight: 200; color: #ccc;}
+input:-moz-placeholder {font-weight: 200; color: #ccc;}
+input::-moz-placeholder {font-weight: 200; color: #ccc;}
+input:-ms-input-placeholder {font-weight: 200; color: #ccc;}
+
