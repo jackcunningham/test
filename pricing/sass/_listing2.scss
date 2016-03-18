@@ -1,0 +1,196 @@
+.listing2 {
+
+  font-size: 13px;
+  color: #444;
+  line-height: 18px;
+  font-weight: 200;
+
+  .listing-row {
+    width: 960px;
+
+  }
+
+  .listing-item {
+    position: relative;
+    text-align: left;
+    border: solid 1px $feelunique-color-structure;
+    border-width: 0 1px 1px 0; 
+    width: 25%;
+    padding: 1.6%;
+    min-height:398px;
+    float: left;
+    transition: background-color 0.33s ease;
+
+    &:hover, &:active {
+      background-color: rgba(200, 200, 200, 0.12);
+
+      .listing-swatch {
+        opacity: 1;
+      }
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    .listing-swatch {
+      position: absolute;
+      text-align: center;
+      top: 15px;
+      right: 15px;
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+      border-radius: 50%;
+      z-index: 2;
+      background: url('../img/swatch.png') no-repeat transparent;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .listing-content {
+      position: absolute;
+      width: 87%;
+      bottom: 15px;
+    }
+
+    .listing-image {
+      position: absolute;
+      display: inline-block;
+      top: 15px;
+      left: 12%;
+      margin: 0 auto;
+      width: 76%;
+      z-index: -1;
+    }
+
+    .listing-summary {
+      height: 54px;
+      max-height: 54px;
+      line-height: 18px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+
+    .listing-features {
+      position: relative;
+      display: block;
+      height: 0;
+      overflow: visible;
+      margin-bottom: 12px;
+
+      span {
+        display: inline-block;
+        line-height: 21px;
+        padding: 0 0.75em;
+        margin: 0 0.25em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #fff;
+        opacity: 0.9;
+
+        &.listing-discount {
+          position: absolute;
+          top: -100px;
+          right: 0;
+          width: 50%;
+          background-color: $feelunique-color-sale; 
+        }
+        &.listing-offer {
+          position: absolute;
+          width: 75px;
+          height: 75px;
+          border-radius: 50%;
+          top: -295px;
+          left: -3px;
+          background-color: $feelunique-color-dark; 
+          line-height: 14px;
+          padding-top: 24px;
+          opacity: 0.85;
+
+          &.u-1liner {
+            padding-top: 30px; 
+          }
+
+        }
+        &.listing-worth {
+          display: none;
+        }
+      }
+    }
+
+    .listing-price {
+      font-weight: 500;
+      font-size: 17px;
+      color: #000;
+      margin-bottom: 15px;
+
+      &.listing-price--sale {
+        color:  $feelunique-color-sale;
+      }
+    }
+
+    .listing-value {
+      font-weight: 200;
+      font-size: 13px;
+      color: #444;
+      text-decoration: line-through;
+    }
+    .listing-worth {
+      font-weight: 500;
+      font-size: 13px;
+      color: $feelunique-color-positive;
+    }
+
+
+    .listing-cta {  
+
+      position: relative;
+      display: block;
+      line-height: 30px;
+      width: auto;
+      height: 30px;
+      margin-bottom: 6px;
+
+      .listing-stars {
+        position: relative;
+        display: inline-block;
+        background: transparent url('../img/cta-full.png') no-repeat;
+        width: 72px;
+        height: 30px;
+        vertical-align: middle;
+        z-index: -1;
+      }
+      .listing-reviews {
+        display: innline-block;
+        line-height: 30px;
+        height: 30px;
+        margin: 0 10px 0 2px;
+
+      }
+      .listing-buy {
+        display: inline-block;
+        background-color: $feelunique-color-structure;
+        ;
+        border-radius: 2px;
+        height: 30px;
+        line-height: 29px;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0 10px;
+        transition: background-color 0.15s ease;
+        //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 5px 5px 12px rgba(0, 0, 0, 0.1);
+
+
+        &:hover, &:active {
+          //background-color: $feelunique-color-dark;
+        }
+      }
+    }
+
+  }
+
+
+}
