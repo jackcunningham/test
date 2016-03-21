@@ -126,11 +126,11 @@ a h2 {
         margin: 0 10px 0 2px; }
       .listing .listing-item .listing-cta .listing-buy {
         display: inline-block;
+        background-color: #ddd;
         color: #454545;
         border-radius: 2px;
         height: 30px;
         line-height: 29px;
-        text-decoration: underline;
         font-weight: 500;
         padding: 0 10px; }
         .listing .listing-item .listing-cta .listing-buy:hover, .listing .listing-item .listing-cta .listing-buy:active {
