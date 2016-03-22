@@ -98,7 +98,7 @@ a h2 {
       color: #000;
       margin-bottom: 15px; }
       .listing .listing-item .listing-price.listing-price--sale {
-        color: #d72245; }
+        color: #000; }
     .listing .listing-item .listing-value {
       font-weight: 200;
       font-size: 13px;
@@ -126,14 +126,17 @@ a h2 {
         margin: 0 10px 0 2px; }
       .listing .listing-item .listing-cta .listing-buy {
         display: inline-block;
-        background-color: #ddd;
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
         color: #454545;
-        border-radius: 2px;
+        border-radius: 3px;
         height: 30px;
         line-height: 29px;
         font-weight: 500;
-        padding: 0 10px; }
+        padding: 0 10px;
+        transition: all 0.15s ease; }
         .listing .listing-item .listing-cta .listing-buy:hover, .listing .listing-item .listing-cta .listing-buy:active {
+          background-color: #ddd;
           color: #000; }
 
 .listing2 {
@@ -221,10 +224,11 @@ a h2 {
           top: -295px;
           left: -3px;
           background-color: #ddd;
-          color: #444;
+          color: #000;
           line-height: 12px;
           padding-top: 21px;
           opacity: 0.85;
+          font-weight: 500;
           font-size: 11px; }
           .listing2 .listing-item .listing-features span.listing-offer.u-1liner {
             padding-top: 28px; }
@@ -260,15 +264,19 @@ a h2 {
         width: 72px;
         height: 30px;
         vertical-align: middle;
-        z-index: -1; }
+        z-index: -1;
+        float: left;
+        margin-left: -3px; }
       .listing2 .listing-item .listing-cta .listing-reviews {
-        display: innline-block;
+        display: inline-block;
         line-height: 30px;
         height: 30px;
-        margin: 0 10px 0 2px; }
+        margin: 0 10px 0 2px;
+        float: left; }
       .listing2 .listing-item .listing-cta .listing-buy {
         display: inline-block;
         background-color: #ddd;
+        float: right;
         border-radius: 2px;
         height: 30px;
         line-height: 29px;
@@ -276,6 +284,9 @@ a h2 {
         font-weight: 500;
         padding: 0 10px;
         transition: background-color 0.15s ease; }
+
+.listing2.listing2--left .listing-item {
+  text-align: left; }
 
 /*===================================================/
 	Utilities

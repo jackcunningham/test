@@ -99,7 +99,7 @@
       margin-bottom: 15px;
 
       &.listing-price--sale {
-        color:  $feelunique-color-sale;
+        color:  #000;
       }
     }
 
@@ -138,20 +138,21 @@
       }
       .listing-buy {
         display: inline-block;
-        background-color: $feelunique-color-structure; 
+        background-color: $feelunique-color-page; 
+        border: 1px solid $feelunique-color-structure; 
         color: $feelunique-color-dark;
-        border-radius: 2px;
+        border-radius: 3px;
         height: 30px;
         line-height: 29px;
         //text-decoration: underline;
         font-weight: 500;
         padding: 0 10px;
-        //transition: all 0.15s ease;
+        transition: all 0.15s ease;
         //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 5px 5px 12px rgba(0, 0, 0, 0.1);
 
 
         &:hover, &:active {
-          //background-color: $feelunique-color-dark;
+          background-color: $feelunique-color-structure;
           color: #000;
         }
       }
