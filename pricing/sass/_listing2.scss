@@ -1,9 +1,9 @@
 .listing2 {
 
   font-size: 13px;
-  color: #444;
+  color: #777; 
   line-height: 18px;
-  font-weight: 200;
+  font-weight: normal;
 
   .listing-row {
     width: 960px;
@@ -113,7 +113,7 @@
           line-height: 12px;
           padding-top: 21px;
           opacity: 0.85;
-          font-weight: 500;
+          font-weight: 600;
           font-size: 11px;
 
           &.u-1liner {
@@ -128,7 +128,7 @@
     }
 
     .listing-price {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 17px;
       color: #000;
       margin-bottom: 15px;
@@ -139,13 +139,13 @@
     }
 
     .listing-value {
-      font-weight: 200;
+      font-weight: normal;
       font-size: 13px;
       color: #444;
       text-decoration: line-through;
     }
     .listing-worth {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 13px;
       color: $feelunique-color-positive;
     }
@@ -188,7 +188,8 @@
         height: 30px;
         line-height: 29px;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
+        color: #444;
         padding: 0 10px;
         transition: background-color 0.15s ease;
         //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 5px 5px 12px rgba(0, 0, 0, 0.1);

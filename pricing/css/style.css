@@ -141,9 +141,9 @@ a h2 {
 
 .listing2 {
   font-size: 13px;
-  color: #444;
+  color: #777;
   line-height: 18px;
-  font-weight: 200; }
+  font-weight: normal; }
   .listing2 .listing-row {
     width: 960px; }
   .listing2 .listing-item {
@@ -228,26 +228,26 @@ a h2 {
           line-height: 12px;
           padding-top: 21px;
           opacity: 0.85;
-          font-weight: 500;
+          font-weight: 600;
           font-size: 11px; }
           .listing2 .listing-item .listing-features span.listing-offer.u-1liner {
             padding-top: 28px; }
         .listing2 .listing-item .listing-features span.listing-worth {
           display: none; }
     .listing2 .listing-item .listing-price {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 17px;
       color: #000;
       margin-bottom: 15px; }
       .listing2 .listing-item .listing-price.listing-price--sale {
         color: #000; }
     .listing2 .listing-item .listing-value {
-      font-weight: 200;
+      font-weight: normal;
       font-size: 13px;
       color: #444;
       text-decoration: line-through; }
     .listing2 .listing-item .listing-worth {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 13px;
       color: #1abc9c; }
     .listing2 .listing-item .listing-cta {
@@ -281,7 +281,8 @@ a h2 {
         height: 30px;
         line-height: 29px;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
+        color: #444;
         padding: 0 10px;
         transition: background-color 0.15s ease; }
 
