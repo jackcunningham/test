@@ -35,6 +35,12 @@ a h2 {
     .listing.listing--regular .listing-item .listing-features span {
       border-width: 2px;
       line-height: 26px; }
+      .listing.listing--regular .listing-item .listing-features span.listing-discount {
+        background-color: #f8d7dd; }
+      .listing.listing--regular .listing-item .listing-features span.listing-offer {
+        background-color: #e3eef5; }
+      .listing.listing--regular .listing-item .listing-features span.listing-worth {
+        background-color: #d6f3ed; }
   .listing .listing-row {
     width: 960px; }
   .listing .listing-item {
@@ -98,8 +104,8 @@ a h2 {
           border-color: #d72245;
           color: #d72245; }
         .listing .listing-item .listing-features span.listing-offer {
-          border-color: #6aa4c3;
-          color: #6aa4c3; }
+          border-color: #62a0ca;
+          color: #62a0ca; }
         .listing .listing-item .listing-features span.listing-worth {
           border-color: #1abc9c;
           color: #1abc9c; }

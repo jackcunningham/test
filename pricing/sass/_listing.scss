@@ -18,6 +18,11 @@
       .listing-features span {
         border-width: 2px;
         line-height: 26px;
+
+        &.listing-discount { background-color: #f8d7dd; }
+        &.listing-offer { background-color: #e3eef5; }
+        &.listing-worth { background-color: #d6f3ed; }
+
       }
     }
 
