@@ -5,6 +5,24 @@
   line-height: 18px;
   font-weight: 200;
 
+  &.listing--regular {
+    font-weight: 400;
+
+    .listing-item {
+      .listing-cta .listing-buy,
+      .listing-price,
+      .listing-features span {
+        font-weight: 600;
+      }
+      .listing-value { font-weight: 400; }
+      .listing-features span {
+        border-width: 2px;
+        line-height: 26px;
+      }
+    }
+
+  }
+
   .listing-row {
     width: 960px;
 

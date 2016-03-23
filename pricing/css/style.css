@@ -24,6 +24,17 @@ a h2 {
   color: #444;
   line-height: 18px;
   font-weight: 200; }
+  .listing.listing--regular {
+    font-weight: 400; }
+    .listing.listing--regular .listing-item .listing-cta .listing-buy,
+    .listing.listing--regular .listing-item .listing-price,
+    .listing.listing--regular .listing-item .listing-features span {
+      font-weight: 600; }
+    .listing.listing--regular .listing-item .listing-value {
+      font-weight: 400; }
+    .listing.listing--regular .listing-item .listing-features span {
+      border-width: 2px;
+      line-height: 26px; }
   .listing .listing-row {
     width: 960px; }
   .listing .listing-item {
