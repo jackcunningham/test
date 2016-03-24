@@ -27,26 +27,25 @@ a h2 {
   .listing.listing--regular {
     font-weight: 400; }
     .listing.listing--regular .listing-item .listing-cta .listing-buy,
-    .listing.listing--regular .listing-item .listing-price,
-    .listing.listing--regular .listing-item .listing-features span {
+    .listing.listing--regular .listing-item .listing-price {
       font-weight: 600; }
-    .listing.listing--regular .listing-item .listing-value {
+    .listing.listing--regular .listing-item .listing-value,
+    .listing.listing--regular .listing-item .listing-features span {
       font-weight: 400; }
     .listing.listing--regular .listing-item .listing-features span {
-      border-width: 2px;
       line-height: 26px; }
       .listing.listing--regular .listing-item .listing-features span.listing-discount {
-        background-color: #f8d7dd; }
+        background-color: rgba(215, 34, 69, 0); }
       .listing.listing--regular .listing-item .listing-features span.listing-offer {
-        background-color: #e3eef5; }
+        background-color: rgba(98, 160, 202, 0); }
       .listing.listing--regular .listing-item .listing-features span.listing-worth {
-        background-color: #d6f3ed; }
+        background-color: rgba(26, 188, 156, 0); }
   .listing .listing-row {
     width: 960px; }
   .listing .listing-item {
     position: relative;
     text-align: center;
-    border: solid 1px #ddd;
+    border: solid 1px #d5d5d5;
     border-width: 0 1px 1px 0;
     width: 25%;
     padding: 1.6%;
@@ -61,15 +60,15 @@ a h2 {
       border-right: 0; }
     .listing .listing-item .listing-swatch {
       position: absolute;
-      top: 15px;
-      left: 15px;
-      width: 34px;
+      display: inline-block;
+      top: 0;
+      left: 0;
       height: 34px;
       line-height: 34px;
-      border-radius: 50%;
+      padding: 0 6px;
       z-index: 2;
-      background: url("../img/swatch.png") no-repeat transparent;
-      opacity: 0;
+      background-color: rgba(255, 255, 255, 0.65);
+      color: rgba(0, 0, 0, 0.35);
       transition: opacity 0.5s ease; }
     .listing .listing-item .listing-content {
       position: absolute;
@@ -91,7 +90,7 @@ a h2 {
       margin-bottom: 12px; }
     .listing .listing-item .listing-features {
       display: block;
-      height: 30px;
+      height: 28px;
       overflow: hidden;
       margin-bottom: 12px; }
       .listing .listing-item .listing-features span {
@@ -121,6 +120,10 @@ a h2 {
       font-size: 13px;
       color: #444;
       text-decoration: line-through; }
+      .listing .listing-item .listing-value.listing-value--worth {
+        color: #1abc9c;
+        font-weight: 600;
+        text-decoration: none; }
     .listing .listing-item .listing-cta {
       position: relative;
       display: block;
@@ -138,22 +141,24 @@ a h2 {
         z-index: -1; }
       .listing .listing-item .listing-cta .listing-reviews {
         display: innline-block;
-        line-height: 30px;
-        height: 30px;
+        line-height: 38px;
+        height: 38px;
         margin: 0 10px 0 2px; }
       .listing .listing-item .listing-cta .listing-buy {
         display: inline-block;
         background-color: #f2f2f2;
-        border: 1px solid #ddd;
-        color: #454545;
-        border-radius: 3px;
-        height: 30px;
-        line-height: 29px;
+        border: 1px solid #ccc;
+        color: #000;
+        border-radius: 2px;
+        height: 36px;
+        line-height: 32px;
+        float: right;
         font-weight: 500;
         padding: 0 10px;
-        transition: all 0.15s ease; }
+        transition: all 0.15s ease;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.08), 5px 5px 12px rgba(0, 0, 0, 0.06); }
         .listing .listing-item .listing-cta .listing-buy:hover, .listing .listing-item .listing-cta .listing-buy:active {
-          background-color: #ddd;
+          background-color: #d5d5d5;
           color: #000; }
 
 .listing2 {
@@ -240,7 +245,7 @@ a h2 {
           border-radius: 50%;
           top: -295px;
           left: -3px;
-          background-color: #ddd;
+          background-color: #d5d5d5;
           color: #000;
           line-height: 12px;
           padding-top: 21px;
@@ -292,7 +297,7 @@ a h2 {
         float: left; }
       .listing2 .listing-item .listing-cta .listing-buy {
         display: inline-block;
-        background-color: #ddd;
+        background-color: #d5d5d5;
         float: right;
         border-radius: 2px;
         height: 30px;

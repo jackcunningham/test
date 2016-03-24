@@ -10,18 +10,17 @@
 
     .listing-item {
       .listing-cta .listing-buy,
-      .listing-price,
-      .listing-features span {
+      .listing-price {
         font-weight: 600;
       }
-      .listing-value { font-weight: 400; }
+      .listing-value,
+      .listing-features span { font-weight: 400; }
       .listing-features span {
-        border-width: 2px;
         line-height: 26px;
 
-        &.listing-discount { background-color: #f8d7dd; }
-        &.listing-offer { background-color: #e3eef5; }
-        &.listing-worth { background-color: #d6f3ed; }
+        &.listing-discount { background-color: rgba(215, 34, 69, 0.0); }
+        &.listing-offer { background-color: rgba(98, 160, 202, 0.0); }
+        &.listing-worth { background-color: rgba(26, 188, 156, 0.0); }
 
       }
     }
@@ -58,15 +57,17 @@
 
     .listing-swatch {
       position: absolute;
-      top: 15px;
-      left: 15px;
-      width: 34px;
+      display: inline-block;
+      top: 0;
+      left: 0;
       height: 34px;
       line-height: 34px;
-      border-radius: 50%;
+      padding: 0 6px;
       z-index: 2;
-      background: url('../img/swatch.png') no-repeat transparent;
-      opacity: 0;
+      background-color: rgba(255, 255, 255, 0.65); 
+      color: rgba(0, 0, 0, 0.35);
+      //background: url('../img/swatch.png') no-repeat transparent;
+      //opacity: 0;
       transition: opacity 0.5s ease;
     }
 
@@ -97,7 +98,7 @@
 
     .listing-features {
       display: block;
-      height: 30px;
+      height: 28px;
       overflow: hidden;
       margin-bottom: 12px;
 
@@ -131,6 +132,12 @@
       font-size: 13px;
       color: #444;
       text-decoration: line-through;
+
+      &.listing-value--worth {
+        color: $feelunique-color-positive;
+        font-weight: 600;
+        text-decoration: none;
+      }
     }
 
 
@@ -154,24 +161,25 @@
       }
       .listing-reviews {
         display: innline-block;
-        line-height: 30px;
-        height: 30px;
+        line-height: 38px;
+        height: 38px;
         margin: 0 10px 0 2px;
 
       }
       .listing-buy {
         display: inline-block;
         background-color: $feelunique-color-page; 
-        border: 1px solid $feelunique-color-structure; 
-        color: $feelunique-color-dark;
-        border-radius: 3px;
-        height: 30px;
-        line-height: 29px;
+        border: 1px solid #ccc; 
+        color: #000;
+        border-radius: 2px;
+        height: 36px;
+        line-height: 32px;
+        float: right;
         //text-decoration: underline;
         font-weight: 500;
         padding: 0 10px;
         transition: all 0.15s ease;
-        //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 5px 5px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.08), 5px 5px 12px rgba(0, 0, 0, 0.06);
 
 
         &:hover, &:active {
