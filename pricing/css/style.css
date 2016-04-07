@@ -57,9 +57,9 @@ a h2 {
       transition: background-color 0.33s ease;
       color: #454545;
       text-decoration: none; }
-      .Listing .Listing-item a.Listing-link:hover, .Listing .Listing-item a.Listing-link:active {
+      .Listing .Listing-item a.Listing-link:hover, .Listing .Listing-item a.Listing-link:focus, .Listing .Listing-item a.Listing-link:active {
         background-color: rgba(200, 200, 200, 0.12); }
-        .Listing .Listing-item a.Listing-link:hover .Listing-swatch, .Listing .Listing-item a.Listing-link:active .Listing-swatch {
+        .Listing .Listing-item a.Listing-link:hover .Listing-swatch, .Listing .Listing-item a.Listing-link:focus .Listing-swatch, .Listing .Listing-item a.Listing-link:active .Listing-swatch {
           opacity: 1; }
       .Listing .Listing-item a.Listing-link .Listing-swatch {
         position: absolute;
@@ -162,7 +162,7 @@ a h2 {
       padding: 0 10px;
       transition: all 0.15s ease;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.08), 5px 5px 12px rgba(0, 0, 0, 0.06); }
-      .Listing .Listing-item .Listing-buy:hover, .Listing .Listing-item .Listing-buy:active {
+      .Listing .Listing-item .Listing-buy:hover, .Listing .Listing-item .Listing-buy:focus, .Listing .Listing-item .Listing-buy:active {
         background-color: #d5d5d5;
         color: #000; }
 
