@@ -31,10 +31,20 @@
 
   }
 
+  &.Listing:hover, &.Listing:focus, &.Listing:active {
+    .Listing-item {
+      opacity: 0.6;
+    }
+    .Listing-item:hover, .Listing-item:focus, .Listing-item:active { 
+      opacity: 1; 
+    }
+  }
+
   .Listing-item {
     position: relative;
     width: 233px;
     float: left;
+    transition: all 0.15s ease;
 
     a.Listing-link {
       position: relative;
@@ -45,10 +55,11 @@
       text-align: center;
       min-height:385px;
       width: auto;
-      transition: background-color 0.33s ease;
+      transition: all 0.15s ease;
       color: $feelunique-color-dark;
       text-decoration: none;
 
+      /*
       &:hover, &:focus, &:active {
         background-color: rgba(200, 200, 200, 0.12);
 
@@ -56,7 +67,7 @@
           opacity: 1;
         }
       }
-     
+     */ 
 
       .Listing-swatch {
         position: absolute;
@@ -182,6 +193,7 @@
       padding: 0 10px;
       transition: all 0.15s ease;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.08), 5px 5px 12px rgba(0, 0, 0, 0.06);
+      z-index: 10;
 
       &:hover, &:focus, &:active {
         background-color: $feelunique-color-structure;
