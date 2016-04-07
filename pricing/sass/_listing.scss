@@ -31,14 +31,14 @@
 
   }
 
-  &.Listing:hover, &.Listing:focus, &.Listing:active {
+  /*&.Listing:hover, &.Listing:focus, &.Listing:active {
     .Listing-item {
       opacity: 0.6;
     }
     .Listing-item:hover, .Listing-item:focus, .Listing-item:active { 
       opacity: 1; 
     }
-  }
+  }*/ 
 
   .Listing-item {
     position: relative;
@@ -59,7 +59,7 @@
       color: $feelunique-color-dark;
       text-decoration: none;
 
-      /*
+      
       &:hover, &:focus, &:active {
         background-color: rgba(200, 200, 200, 0.12);
 
@@ -67,7 +67,7 @@
           opacity: 1;
         }
       }
-     */ 
+     
 
       .Listing-swatch {
         position: absolute;

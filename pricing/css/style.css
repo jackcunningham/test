@@ -24,7 +24,15 @@ a h2 {
   font-size: 13px;
   color: #444;
   line-height: 18px;
-  font-weight: 200; }
+  font-weight: 200;
+  /*&.Listing:hover, &.Listing:focus, &.Listing:active {
+    .Listing-item {
+      opacity: 0.6;
+    }
+    .Listing-item:hover, .Listing-item:focus, .Listing-item:active { 
+      opacity: 1; 
+    }
+  }*/ }
   .Listing.Listing--regular {
     font-weight: 400; }
     .Listing.Listing--regular .Listing-item .Listing-cta .Listing-buy,
@@ -41,10 +49,6 @@ a h2 {
         background-color: rgba(98, 160, 202, 0); }
       .Listing.Listing--regular .Listing-item .Listing-features span.Listing-worth {
         background-color: rgba(26, 188, 156, 0); }
-  .Listing.Listing:hover .Listing-item, .Listing.Listing:focus .Listing-item, .Listing.Listing:active .Listing-item {
-    opacity: 0.6; }
-  .Listing.Listing:hover .Listing-item:hover, .Listing.Listing:hover .Listing-item:focus, .Listing.Listing:hover .Listing-item:active, .Listing.Listing:focus .Listing-item:hover, .Listing.Listing:focus .Listing-item:focus, .Listing.Listing:focus .Listing-item:active, .Listing.Listing:active .Listing-item:hover, .Listing.Listing:active .Listing-item:focus, .Listing.Listing:active .Listing-item:active {
-    opacity: 1; }
   .Listing .Listing-item {
     position: relative;
     width: 233px;
@@ -61,16 +65,11 @@ a h2 {
       width: auto;
       transition: all 0.15s ease;
       color: #454545;
-      text-decoration: none;
-      /*
-      &:hover, &:focus, &:active {
-        background-color: rgba(200, 200, 200, 0.12);
-
-        .Listing-swatch {
-          opacity: 1;
-        }
-      }
-     */ }
+      text-decoration: none; }
+      .Listing .Listing-item a.Listing-link:hover, .Listing .Listing-item a.Listing-link:focus, .Listing .Listing-item a.Listing-link:active {
+        background-color: rgba(200, 200, 200, 0.12); }
+        .Listing .Listing-item a.Listing-link:hover .Listing-swatch, .Listing .Listing-item a.Listing-link:focus .Listing-swatch, .Listing .Listing-item a.Listing-link:active .Listing-swatch {
+          opacity: 1; }
       .Listing .Listing-item a.Listing-link .Listing-swatch {
         position: absolute;
         display: inline-block;
