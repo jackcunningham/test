@@ -19,119 +19,127 @@ a h2 {
   color: #444;
   clear: both; }
 
-.listing {
+.Listing {
+  box-sizing: border-box;
   font-size: 13px;
   color: #444;
   line-height: 18px;
   font-weight: 200; }
-  .listing.listing--regular {
+  .Listing.Listing--regular {
     font-weight: 400; }
-    .listing.listing--regular .listing-item .listing-cta .listing-buy,
-    .listing.listing--regular .listing-item .listing-price {
+    .Listing.Listing--regular .Listing-item .Listing-cta .Listing-buy,
+    .Listing.Listing--regular .Listing-item .Listing-price {
       font-weight: 600; }
-    .listing.listing--regular .listing-item .listing-value,
-    .listing.listing--regular .listing-item .listing-features span {
+    .Listing.Listing--regular .Listing-item .Listing-value,
+    .Listing.Listing--regular .Listing-item .Listing-features span {
       font-weight: 400; }
-    .listing.listing--regular .listing-item .listing-features span {
+    .Listing.Listing--regular .Listing-item .Listing-features span {
       line-height: 26px; }
-      .listing.listing--regular .listing-item .listing-features span.listing-discount {
+      .Listing.Listing--regular .Listing-item .Listing-features span.Listing-discount {
         background-color: rgba(215, 34, 69, 0); }
-      .listing.listing--regular .listing-item .listing-features span.listing-offer {
+      .Listing.Listing--regular .Listing-item .Listing-features span.Listing-offer {
         background-color: rgba(98, 160, 202, 0); }
-      .listing.listing--regular .listing-item .listing-features span.listing-worth {
+      .Listing.Listing--regular .Listing-item .Listing-features span.Listing-worth {
         background-color: rgba(26, 188, 156, 0); }
-  .listing .listing-row {
-    width: 960px; }
-  .listing .listing-item {
+  .Listing .Listing-item {
     position: relative;
-    text-align: center;
-    border: solid 1px #d5d5d5;
-    border-width: 0 1px 1px 0;
-    width: 25%;
-    padding: 1.6%;
-    min-height: 398px;
-    float: left;
-    transition: background-color 0.33s ease; }
-    .listing .listing-item:hover, .listing .listing-item:active {
-      background-color: rgba(200, 200, 200, 0.12); }
-      .listing .listing-item:hover .listing-swatch, .listing .listing-item:active .listing-swatch {
-        opacity: 1; }
-    .listing .listing-item:last-child {
-      border-right: 0; }
-    .listing .listing-item .listing-swatch {
-      position: absolute;
-      display: inline-block;
-      top: 0;
-      left: 0;
-      height: 34px;
-      line-height: 34px;
-      padding: 0 6px;
-      z-index: 2;
-      background-color: rgba(255, 255, 255, 0.65);
-      color: rgba(0, 0, 0, 0.35);
-      transition: opacity 0.5s ease; }
-    .listing .listing-item .listing-content {
-      position: absolute;
-      width: 87%;
-      bottom: 15px; }
-    .listing .listing-item .listing-image {
-      position: absolute;
-      display: inline-block;
-      top: 15px;
-      left: 12%;
-      margin: 0 auto;
-      width: 76%;
-      z-index: -1; }
-    .listing .listing-item .listing-summary {
-      height: 54px;
-      max-height: 54px;
-      line-height: 18px;
-      overflow: hidden;
-      margin-bottom: 12px; }
-    .listing .listing-item .listing-features {
-      display: block;
-      height: 28px;
-      overflow: hidden;
-      margin-bottom: 12px; }
-      .listing .listing-item .listing-features span {
-        border: 1px solid #444;
-        display: inline-block;
-        line-height: 28px;
-        padding: 0 0.75em;
-        margin: 0 0.25em; }
-        .listing .listing-item .listing-features span.listing-discount {
-          border-color: #d72245;
-          color: #d72245; }
-        .listing .listing-item .listing-features span.listing-offer {
-          border-color: #62a0ca;
-          color: #62a0ca; }
-        .listing .listing-item .listing-features span.listing-worth {
-          border-color: #1abc9c;
-          color: #1abc9c; }
-    .listing .listing-item .listing-price {
-      font-weight: 500;
-      font-size: 17px;
-      color: #000;
-      margin-bottom: 15px; }
-      .listing .listing-item .listing-price.listing-price--sale {
-        color: #000; }
-    .listing .listing-item .listing-value {
-      font-weight: 200;
-      font-size: 13px;
-      color: #444;
-      text-decoration: line-through; }
-      .listing .listing-item .listing-value.listing-value--worth {
-        color: #1abc9c;
-        font-weight: 600;
-        text-decoration: none; }
-    .listing .listing-item .listing-cta {
+    width: 233px;
+    float: left; }
+    .Listing .Listing-item a.Listing-link {
       position: relative;
       display: block;
-      line-height: 30px;
+      border: solid 1px #d5d5d5;
+      border-width: 1px 0 0 1px;
+      padding: 1.6%;
+      text-align: center;
+      min-height: 385px;
       width: auto;
-      height: 30px;
-      margin-bottom: 6px; }
-      .listing .listing-item .listing-cta .listing-stars {
+      transition: background-color 0.33s ease;
+      color: #454545;
+      text-decoration: none; }
+      .Listing .Listing-item a.Listing-link:hover, .Listing .Listing-item a.Listing-link:active {
+        background-color: rgba(200, 200, 200, 0.12); }
+        .Listing .Listing-item a.Listing-link:hover .Listing-swatch, .Listing .Listing-item a.Listing-link:active .Listing-swatch {
+          opacity: 1; }
+      .Listing .Listing-item a.Listing-link .Listing-swatch {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        height: 34px;
+        line-height: 34px;
+        padding: 0 6px;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.65);
+        color: rgba(0, 0, 0, 0.35);
+        transition: opacity 0.5s ease; }
+      .Listing .Listing-item a.Listing-link .Listing-content {
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        width: 86%;
+        bottom: 15px;
+        left: 6%; }
+      .Listing .Listing-item a.Listing-link .Listing-image {
+        position: absolute;
+        display: inline-block;
+        top: 15px;
+        left: 12%;
+        margin: 0 auto;
+        width: 76%;
+        max-width: 180px;
+        z-index: -1; }
+      .Listing .Listing-item a.Listing-link .Listing-summary {
+        height: 54px;
+        max-height: 54px;
+        line-height: 18px;
+        overflow: hidden;
+        margin-bottom: 12px; }
+      .Listing .Listing-item a.Listing-link .Listing-features {
+        display: block;
+        height: 28px;
+        overflow: hidden;
+        margin-bottom: 12px; }
+        .Listing .Listing-item a.Listing-link .Listing-features span {
+          border: 1px solid #444;
+          display: inline-block;
+          line-height: 26px;
+          padding: 0 0.75em;
+          margin: 0 0.25em; }
+          .Listing .Listing-item a.Listing-link .Listing-features span.Listing-discount {
+            border-color: #d72245;
+            color: #d72245; }
+          .Listing .Listing-item a.Listing-link .Listing-features span.Listing-offer {
+            border-color: #62a0ca;
+            color: #62a0ca; }
+          .Listing .Listing-item a.Listing-link .Listing-features span.Listing-worth {
+            border-color: #1abc9c;
+            color: #1abc9c; }
+      .Listing .Listing-item a.Listing-link .Listing-price {
+        font-weight: 500;
+        font-size: 17px;
+        color: #000;
+        margin-bottom: 50px; }
+        .Listing .Listing-item a.Listing-link .Listing-price.Listing-price--sale {
+          color: #000; }
+      .Listing .Listing-item a.Listing-link .Listing-value {
+        font-weight: 200;
+        font-size: 13px;
+        color: #444;
+        text-decoration: line-through; }
+        .Listing .Listing-item a.Listing-link .Listing-value.Listing-value--worth {
+          color: #1abc9c;
+          font-weight: 600;
+          text-decoration: none; }
+    .Listing .Listing-item .Listing-reviews {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      display: innline-block;
+      line-height: 38px;
+      height: 38px;
+      margin: 0 10px 0 2px; }
+      .Listing .Listing-item .Listing-reviews .Listing-stars {
         position: relative;
         display: inline-block;
         background: transparent url("../img/cta-full.png") no-repeat;
@@ -139,27 +147,24 @@ a h2 {
         height: 30px;
         vertical-align: middle;
         z-index: -1; }
-      .listing .listing-item .listing-cta .listing-reviews {
-        display: innline-block;
-        line-height: 38px;
-        height: 38px;
-        margin: 0 10px 0 2px; }
-      .listing .listing-item .listing-cta .listing-buy {
-        display: inline-block;
-        background-color: #f2f2f2;
-        border: 1px solid #ccc;
-        color: #000;
-        border-radius: 2px;
-        height: 36px;
-        line-height: 32px;
-        float: right;
-        font-weight: 500;
-        padding: 0 10px;
-        transition: all 0.15s ease;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.08), 5px 5px 12px rgba(0, 0, 0, 0.06); }
-        .listing .listing-item .listing-cta .listing-buy:hover, .listing .listing-item .listing-cta .listing-buy:active {
-          background-color: #d5d5d5;
-          color: #000; }
+    .Listing .Listing-item .Listing-buy {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      display: inline-block;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      color: #000;
+      border-radius: 2px;
+      height: 36px;
+      line-height: 32px;
+      font-weight: 500;
+      padding: 0 10px;
+      transition: all 0.15s ease;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.08), 5px 5px 12px rgba(0, 0, 0, 0.06); }
+      .Listing .Listing-item .Listing-buy:hover, .Listing .Listing-item .Listing-buy:active {
+        background-color: #d5d5d5;
+        color: #000; }
 
 .listing2 {
   font-size: 13px;
