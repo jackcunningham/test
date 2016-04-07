@@ -90,6 +90,7 @@ a h2 {
         bottom: 15px;
         left: 6%; }
       .Listing .Listing-item a.Listing-link .Listing-image {
+        border: none;
         position: absolute;
         display: inline-block;
         top: 15px;
