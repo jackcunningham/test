@@ -30,7 +30,7 @@ body {
   height: 50px;
   line-height: 50px; 
   font-size: 16px;	 
-  padding: 0 0.75em;
+  padding: 0 50px 0 0.75em;
   font-family: georgia;
   border: 0;
   background-color: transparent;
@@ -107,5 +107,6 @@ $('.search-button').on('click', function() {
 $('.hide-button').on('click', function() {
   $('.search-bar').hide();
   $('.nav-bar').show();
+  $('input.search').val('');
 });
 </script>
