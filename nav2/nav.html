@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<title>Nav</title>
+
+<meta name="viewport" content="width=device-width" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet" />
+<link href="nav.css" rel="stylesheet" />
+
+<svg width="0" height="0" display="none">
+    <defs>
+        <symbol id="burger" class="svg-icon" viewbox="0 0 32 32">
+            <title>Burger</title>
+            <line x1="7" y1="7.5" x2="25" y2="7.5"/>
+            <line x1="7" y1="16" x2="25" y2="16"/>
+            <line x1="7" y1="24.5" x2="25" y2="24.5"/>
+		</symbol>
+		<symbol id="close" viewbox="0 0 32 32">
+            <title>Close</title>
+            <line x1="7.5" y1="7.5" x2="24.5" y2="24.5"/>
+            <line x1="24.5" y1="7.5" x2="7.5" y2="24.5"/>
+        </symbol>
+		<symbol id="chevron" class="svg-icon" viewbox="0 0 32 32">
+            <title>chevron</title>
+			<polyline class="st0" points="14,10 20,16 14,22 "/>
+        </symbol>
+    </defs>
+</svg>
+
+
+
+<div id="root">
+
+	<navigation>
+
+		<ul class="account-menu">
+			<li-menu heading="Hello Jackie (account)">
+				<li-item>Notifications</li-item>
+				<li-item>Account home</li-item>
+				<li-item>Orders</li-item>
+				<li-item>Wish List</li-item>
+				<li-item>Favourites</li-item>
+				<li-item>Subscriptions</li-item>
+				<li-menu heading="Offers & Vouchers">
+					<li-item>My Offers</li-item>
+					<li-item>My Brands</li-item>
+					<li-item>My Gift Vouchers</li-item>
+					<li-item>Refer a friend</li-item>
+				</li-menu>
+				<li-menu heading="Account Settings">
+					<li-item>Account Details</li-item>
+					<li-item>Preference Centre</li-item>
+					<li-item>Profile Builder</li-item>
+					<li-item>Social Accounts</li-item>
+					<li-item>Address Book</li-item>
+				</li-menu>
+				<li-menu heading="Contact">
+					<li-item>Contact Us</li-item>
+					<li-item>My Support</li-item>
+				</li-menu>
+				<li-item>Sign Out</li-item>
+			</li-menu>
+		</ul>    
+			
+		<ul class="main-menu">    
+			<li-item highlight="colour-coral">Brands A-Z</li-item>
+			<li-item highlight="colour-sale">Sale</li-item>
+			<li-menu heading="Makeup">
+				<li-menu heading="Complexion">
+					<li-item>Foundations</li-item>
+					<li-item>Blushers</li-item>
+					<li-item>Bronzers</li-item>
+					<li-item>Concealers & Correctors</li-item>
+					<li-item>Powders</li-item>
+					<li-item>Tinted Moisturisers</li-item>
+					<li-item>BB Creams</li-item>
+					<li-item>CC Creams</li-item>
+					<li-item>Primers</li-item>
+					<li-item>Setting Sprays</li-item>
+					<li-item>Highlighters</li-item>
+					<li-item>Contouring</li-item>
+				</li-menu>
+				<li-item>Palettes</li-item>
+				<li-menu heading="Eyes">
+					<li-item>Eyeliners</li-item>
+					<li-item>Mascaras</li-item>
+					<li-item>Eyeshadows</li-item>
+					<li-item>False Lashes</li-item>
+					<li-item>Lash & Brow Treatments</li-item>
+					<li-item>Under Eye Concealers</li-item>
+				</li-menu>
+				<li-menu heading="Lips">
+					<li-item>Lipsticks</li-item>
+					<li-item>Lip Liners</li-item>
+					<li-item>Lip Gloss & Stain</li-item>
+					<li-item>Lip Plumpers</li-item>
+					<li-item>Lip Balms & Treatments</li-item>
+				</li-menu>
+				<li-item>Makeup Brushes</li-item>
+				<li-item>Brows</li-item>
+				<li-item>Nails</li-item>
+				<li-item>Tools & Accessories</li-item>
+				<li-item>Organic & Natural</li-item>
+			</li-menu>
+			<li-menu heading="Skin">
+				<li-menu heading="Moisturiser">
+					<li-item>Oily & Combination</li-item>
+					<li-item>Day Creams</li-item>
+					<li-item>Night Creams</li-item>
+					<li-item>Balms & Gels</li-item>
+					<li-item>Creams & Lotions</li-item>
+					<li-item>Oils</li-item>
+				</li-menu>
+				<li-menu heading="Cleanser">
+					<li-item>Combination & Oily Skin</li-item>
+					<li-item>Mature</li-item>
+					<li-item>Cleansing Tools</li-item>
+					<li-item>Wipes</li-item>
+					<li-item>Face Cloths & Sponges</li-item>
+					<li-item>Facial Cleansing Brushes</li-item>
+					<li-item>Micellar Water</li-item>
+				</li-menu>
+				<li-menu heading="Toner">
+					<li-item>Face Mists & Sprays</li-item>
+				</li-menu>
+				<li-item>Exfoliators</li-item>
+				<li-item>Serums</li-item>
+				<li-menu heading="Face masks">
+					<li-item>Eye masks</li-item>
+					<li-item>Sheet masks</li-item>
+				</li-menu>
+				<li-item>Eye Care</li-item>
+				<li-item>Eye Cream</li-item>
+				<li-item>Eye Gel</li-item>
+				<li-item>Eye Patches</li-item>
+				<li-item>Lip Care</li-item>
+				<li-menu heading="Sun & Tan">
+					<li-item>Sun Protection</li-item>
+					<li-item>Tan Optimisers & Enhancers</li-item>
+					<li-item>After Sun</li-item>
+					<li-item>Fake Tan for Body</li-item>
+					<li-item>Fake Tan for Face</li-item>
+					<li-item>Hair Protection & Care</li-item>
+					<li-item>Lip Protection</li-item>
+					<li-item>Accessories</li-item>
+					<li-item>Wash Off</li-item>
+					<li-item>Tan Removers</li-item>
+					<li-item>Travel Sizes</li-item>
+				</li-menu>
+				<li-menu heading="Skin Concerns">
+					<li-item>Anti-Ageing</li-item>
+					<li-item>Anti-Dark Spots</li-item>
+					<li-item>Anti-Pollution</li-item>
+					<li-item>Blemish-prone Skin</li-item>
+					<li-item>Eczema & Dermatitis</li-item>
+					<li-item>Neck & Decollete Care</li-item>
+					<li-item>Pigmentation</li-item>
+					<li-item>Redness</li-item>
+					<li-item>Dry</li-item>
+					<li-item>Dehydrated</li-item>
+					<li-item>Sensitive</li-item>
+					<li-item>Oily</li-item>
+				</li-menu>
+				<li-item>Skincare Tools & Kits</li-item>
+				<li-item>Korean Skincare</li-item>
+				<li-item>Organic Skincare</li-item>
+				<li-item>Expert Skincare</li-item>
+				<li-item>Supplements</li-item>
+			</li-menu>
+			<li-menu heading="Hair">
+				<li-menu heading="Shampoo">
+					<li-item>Dry Shampoo</li-item>
+					<li-item>Anti-Dandruff</li-item>
+					<li-item>Curly Hair</li-item>
+					<li-item>Dry/Damaged</li-item>
+					<li-item>Coloured/Dyed</li-item>
+					<li-item>Oily/Greasy</li-item>
+					<li-item>Sulphate Free</li-item>
+				</li-menu>
+				<li-menu heading="Conditioner">
+					<li-item>Leave In Conditioner</li-item>
+				</li-menu>
+				<li-menu heading="Treatments">
+					<li-item>Hair Masks</li-item>
+					<li-item>Scalp Care</li-item>
+					<li-item>Thinning & Hair Loss</li-item>
+					<li-item>Split Ends</li-item>
+				</li-menu>
+				<li-menu heading="Styling">
+					<li-item>Heat Protection</li-item>
+					<li-item>Hairspray</li-item>
+					<li-item>Curly Hair Products</li-item>
+					<li-item>Waxes, Gels & Clays</li-item>
+					<li-item>Mousses</li-item>
+					<li-item>Pomades</li-item>
+					<li-item>Hair Cream</li-item>
+				</li-menu>
+				<li-item>Supersizes & Duos</li-item>
+				<li-item>Oils & Serums</li-item>
+				<li-menu heading="Colour">
+					<li-item>Semi-Permanent</li-item>
+					<li-item>Temporary</li-item>
+					<li-item>Root Touch Up</li-item>
+				</li-menu>
+				<li-menu heading="Electrical">
+					<li-item>Hairdryers</li-item>
+					<li-item>Hair Straighteners</li-item>
+					<li-item>Hair Curlers</li-item>
+				</li-menu>
+				<li-menu heading="Tools & Accessories">
+					<li-item>Brushes & Combs</li-item>
+				</li-menu>
+				<li-item>Supplements</li-item>
+			</li-menu>
+			<li-menu heading="Fragrance">
+					<li-item>Eau de Parfum & Perfume</li-item>
+					<li-item>Eau de Toilette</li-item>
+					<li-item>Bath & Shower</li-item>
+					<li-item>Body Moisturisation</li-item>
+					<li-item>Niche Fragrance</li-item>
+					<li-item>Soap & Powder</li-item>
+					<li-item>Perfume Atomisers</li-item>
+					<li-item>Body & Hair Mist</li-item>
+					<li-item>Deodorants</li-item>
+					<li-item>Cologne</li-item>
+					<li-item>Eau FraÃ®che</li-item>
+					<li-menu heading="Home Fragrances">
+						<li-item>Scented Candles</li-item>
+						<li-item>Reed Diffusers</li-item>
+						<li-item>Room Sprays</li-item>
+						<li-item>Gifts & Sets</li-item>
+					</li-menu>
+			</li-menu>
+			<li-menu heading="Body">
+				<li-menu heading="Bath & Shower">
+					<li-item>Bath & Shower Gels</li-item>
+					<li-item>Bubbles</li-item>
+					<li-item>Bath Soaks</li-item>
+					<li-item>Oils</li-item>
+					<li-item>Bath Salts</li-item>
+					<li-item>Scrubs & Exfoliation</li-item>
+				</li-menu>
+				<li-menu heading="Body Care & Treatments">
+					<li-item>Cremes & Butters</li-item>
+					<li-item>Lotions</li-item>
+					<li-item>Oils & Concentrates</li-item>
+					<li-item>Powders</li-item>
+					<li-item>Gels & Sprays</li-item>
+					<li-item>Balms & Ointments</li-item>
+					<li-item>Bust & Nipple Care</li-item>
+					<li-item>Leg Treatments</li-item>
+					<li-item>Eczema, Dermatitis & Psoriasis</li-item>
+					<li-item>Cellulite</li-item>
+					<li-item>Stretch Marks & Scars</li-item>
+					<li-item>Slimming, Firming & Detox</li-item>
+					<li-item>Muscular Aches & Pains</li-item>
+					<li-item>Blemish-prone</li-item>
+				</li-menu>
+				<li-menu heading="Handcare">
+					<li-item>Creams & Lotions</li-item>
+					<li-item>Balms, Ointments & Gels</li-item>
+					<li-item>Treatments & Masks</li-item>
+					<li-item>Soaps & Cleansers</li-item>
+					<li-item>Sanitisers</li-item>
+					<li-item>Scrubs & Brushes</li-item>
+					<li-item>Sets & Kits</li-item>
+				</li-menu>
+				<li-menu heading="Foot Care">
+					<li-item>Creams & Lotions</li-item>
+					<li-item>Balms & Butters</li-item>
+					<li-item>Treatments</li-item>
+					<li-item>Soaks & Masks</li-item>
+					<li-item>Exfoliation</li-item>
+					<li-item>Anti-Fungal & Antibacterial</li-item>
+					<li-item>Files & Tools</li-item>
+					<li-item>Kits</li-item>
+				</li-menu>
+				<li-item>Body Sculpting & Toning</li-item>
+				<li-item>Soaps</li-item>
+				<li-item>Deodorants</li-item>
+				<li-item>Hair Removal</li-item>
+				<li-item>Bathroom Accessories</li-item>
+				<li-item>Dental Care</li-item>
+				<li-menu heading="Feminine Essentials">
+					<li-item>Feminine Essentials</li-item>
+					<li-item>Sexual Pleasure</li-item>
+					<li-item>Mood</li-item>
+					<li-item>Intimate Care</li-item>
+				</li-menu>
+				<li-item>Fashion First Aid</li-item>
+				<li-item>Organic</li-item>
+				<li-item>Mother & Baby</li-item>
+			</li-menu>
+			<li-menu heading="Samples">
+				<li-item>Beauty Kit</li-item>
+				<li-item>Pick & Mix</li-item>
+				<li-item>Try Me</li-item>
+				<li-item>Shop All</li-item>
+			</li-menu>
+			<li-menu heading="Offers">
+				<li-item>Shop All Offers</li-item>
+				<li-item>Free Gifts</li-item>
+				<li-item>Up to 20% off Makeup</li-item>
+				<li-item>3 For 2</li-item>
+				<li-item>Supersizes</li-item>
+				<li-item>Value Sets</li-item>
+				<li-item>10% Brand for Life</li-item>
+				<li-item>Clearance - Up to 50% Off</li-item>
+				<li-item>All Savings</li-item>
+			</li-menu>
+			<li-item>Marketplace</li-item>
+			<li-item>Rewards</li-item>
+			<li-item>Top 9</li-item>
+			<li-item>Blog</li-item>
+
+		</ul>
+
+		<ul class="help-menu">
+			<li-menu heading="Need help?">
+				<li-item>Help Centre</li-item>
+				<li-item>Delivery Information</li-item>
+				<li-item>Returns Policy</li-item>
+				<li-item>Contact us</li-item>
+			</li-menu>
+		</ul>
+
+	</navigation>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="nav.js"></script>
+
+
+  
