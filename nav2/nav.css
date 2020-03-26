@@ -22,6 +22,16 @@ body {
     transform: translateX(calc(-100% - 50px));
 }
 
+.navigation a {
+    color: #333A40;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #333A40;
+    text-decoration: underline;
+}
+
 .navigation.navigationOpen {
     transform: translateX(0);
 }
@@ -58,7 +68,7 @@ li.li-menu {
 
 li.li-menu.liMenuOpen {
 	max-height: 999px;
-	font-weight: 800;
+	font-weight: bold; /*800*/
 }
 
 
@@ -88,10 +98,10 @@ li b:active {
     background: rgba(0, 0, 0, 0.05);
 }
 
+/* Mobile tabs */
 ul.main-menu li { 
-	font-size: 21px; 
-	font-weight: 800;
-	text-transform: uppercase;
+	font-size: 19px; 
+    font-weight: bold;
 }
 ul.main-menu ul li,
 ul.account-menu li { 
@@ -127,7 +137,7 @@ ul.account-menu li {
 }
 
 .svgicon.svgicon--b {
-    stroke-width: 3;
+    stroke-width: 2.5;
 }
 
 .svgicon use {
@@ -252,10 +262,12 @@ ul.account-menu li {
         min-width: 20%;
     }
 
+    /* Mega menu drop-down style */
     ul.main-menu > li.li-menu.liMenuOpen > ul {
         max-height: 444px;
         padding: 2em 4%;
         box-sizing: border-box;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.05);
     }
 
     /* 3rd level nav */

@@ -1,6 +1,6 @@
 Vue.component('li-item', {
 	props: ['highlight'],
-	template: '<li :class="highlight"><slot></slot></li>',
+	template: '<li :class="highlight"><a href=""><slot></slot></a></li>',
 	data() {
 		return {}
 	}
@@ -16,7 +16,7 @@ Vue.component('li-menu', {
 					<use xlink:href="#chevron" />
 				</svg>
 			</b>
-			{{ heading }}
+			<a href="">{{ heading }}</a>
 			<ul>
 				<slot></slot>
 			</ul>
@@ -29,6 +29,7 @@ Vue.component('li-menu', {
   },
   methods: {
   	toggleCategory: function() {
+		  
   	  this.isOpen = !this.isOpen
   	}
   },
