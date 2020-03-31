@@ -123,6 +123,9 @@ li.li-menu.liMenuOpen {
         max-width: 420px;
         transform: translateX(110vw);
         height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         top: 0;
         transition: transform 0.33s ease;
         z-index: 1;
