@@ -11,28 +11,41 @@ Vue.component('li-menu', {
 	props : ['heading'],
 	template: `
 		<li class="li-menu" v-bind:class="{ liMenuOpen: isOpen }">
-			<b @click="toggleCategory()">
-				<svg width="28" height="28" class="svgicon svgicon--b">
+			
+			<a href="" @click="toggleCategory($event)">
+				{{ heading }}
+			
+				<svg width="24" height="24" class="navigation-toggle svgicon svgicon--b">
 					<use xlink:href="#chevron" />
 				</svg>
-			</b>
-			<a href="">{{ heading }}</a>
+			
+			</a>
 			<ul>
+				<li @click="toggleCategory($event)" class="navigation-back">
+					<svg width="24" height="24" class="navigation-toggle navigation-back svgicon svgicon--b">
+						<use xlink:href="#chevron" />
+					</svg>
+					Back
+				</li>
 				<slot></slot>
 			</ul>
 		</li>
 	`,
-  data() {
-  	return {
-  		isOpen: false
-  	}
-  },
-  methods: {
-  	toggleCategory: function() {
-		  
-  	  this.isOpen = !this.isOpen
-  	}
-  },
+	data() {
+  		return {
+  			isOpen: false
+  		}
+	},
+	methods: {
+		toggleCategory: function(event) {
+
+			event.preventDefault();
+			//event.target.parentNode.classList.add('isParked');
+
+			this.isOpen = !this.isOpen
+
+		}
+	}
 }); 
 
 Vue.component('navigation', {
@@ -43,12 +56,17 @@ Vue.component('navigation', {
 			</svg>
 
 			<div class="navigation" v-bind:class="{ navigationOpen: isOpen }">
-			
-				<svg width="32" height="32" class="svgicon navigation-close" @click="closeNavigation()">
+
+				<div class="navigation-wrapper">
+					<slot></slot>
+				</div>
+
+				<div class="navigation-matte" @click="closeNavigation()">
+				<svg width="56" height="56" class="svgicon navigation-close">
 					<use xlink:href="#close" />
 				</svg>
 
-				<slot></slot>
+			</div>
 			</div>
 		</div>
 	`,
@@ -69,8 +87,30 @@ Vue.component('navigation', {
 });
 
 
-
-
 new Vue({
-	el: '#root'
-})
+	el: '#root',
+	mounted() {
+
+		var subMenus = document.querySelectorAll('.navigation .li-menu');
+
+		for (i = 0; i < subMenus.length; ++i) {
+			
+			var parentLink = subMenus[i].querySelector('a');
+			var homeLink = parentLink.cloneNode(true);
+			homeLink.innerText = 'All ' + homeLink.innerText.trim();
+			var firstItem = subMenus[i].querySelector('ul li');
+
+			var homeLinkLi = document.createElement('li');
+			homeLinkLi.prepend(homeLink);
+			homeLinkLi.classList.add('navigation-subhead');
+
+			firstItem.after(homeLinkLi);
+
+			
+
+		}
+
+	}
+});
+
+
