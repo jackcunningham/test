@@ -1,6 +1,17 @@
 Vue.component('li-item', {
-	props: ['highlight'],
-	template: '<li :class="highlight"><a href=""><slot></slot></a></li>',
+	props: ['highlight', 'summary', 'media', 'cta'],
+	template: `
+		<li :class="highlight" v-if="media">
+			<a href="" class="nav-media-block">
+				<div class="nav-media-title"><slot></slot></div>
+				<img v-if="media" :src="media" class="nav-media-img" />
+				<div v-if="summary" class="nav-media-summary">{{ summary }}</div>
+				<div v-if="cta" class="nav-media-cta">{{ cta }}</div>
+			</a>
+		</li>
+		<li :class="highlight" v-else>
+			<a href=""><slot></slot></a>
+		</li>`,
 	data() {
 		return {}
 	}
@@ -40,7 +51,9 @@ Vue.component('li-menu', {
 		toggleCategory: function(event) {
 
 			event.preventDefault();
-			//event.target.parentNode.classList.add('isParked');
+			event.target.closest('ul').classList.add('isParked');
+
+			// when there is a scroll position, set an offset for the sub menu
 
 			this.isOpen = !this.isOpen
 
