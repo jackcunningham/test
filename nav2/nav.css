@@ -175,7 +175,7 @@ li.navigation-help-menu > a {
 /* Media navs */
 a.nav-media-block {
     margin: 0.66em 0 1.666em;
-    line-height: 21px;
+    line-height: 17px;
     text-transform: none;
     letter-spacing: normal;
 }
@@ -185,11 +185,14 @@ a.nav-media-block:hover {
 
 .nav-media-title {
     font-weight: bold;
+    display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.035em;
     font-size: 14px;
     line-height: 32px;
-
+    transform: translateY(21px);
+    background: #fff;
+    padding-right: 1.333em;
 }
 
 .nav-media-img {
@@ -301,7 +304,7 @@ a.nav-media-block:hover .nav-media-cta {
     ul.main-menu > li.li-menu {
         display: block;
         max-height: 56px;
-        transition: max-height 0.33s ease;
+        transition: max-height 3s ease;
         overflow: hidden;
     }
 
@@ -325,7 +328,7 @@ a.nav-media-block:hover .nav-media-cta {
         flex-wrap: wrap;
         background-color: #f2f2f2;
         max-height: 0;
-        transition: max-height 0.33s ease;
+        transition: max-height 0s ease;
         overflow: hidden;
         text-align: left;
     }
@@ -381,6 +384,27 @@ a.nav-media-block:hover .nav-media-cta {
     ul.main-menu > li.li-menu ul > li.li-menu,
     ul.main-menu > li.li-menu ul > li.li-menu.liMenuOpen {
         max-height: 6666px;
+    }
+
+    /* Media blocks */
+
+    a.nav-media-block {
+        line-height: 20px;
+    }
+
+    .nav-media-title {
+        font-size: 11.5px;
+        transform: none;
+        background: transparent;
+    }
+    
+    .nav-media-summary,
+    .nav-media-cta {
+        line-height: 17px;
+    }
+
+    .nav-media-img {
+        margin-bottom: 0.666em;
     }
 
 
