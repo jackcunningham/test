@@ -1,0 +1,225 @@
+.header {
+    position: fixed;
+    width: 100vw;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 56px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 3px;
+}
+
+.header > ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.header > ul > li {
+    width: 42px;
+    height: 56px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.header > ul > li > a {
+    width: 42px;
+    height: 56px;
+    color: #333A40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > ul > li.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > ul > li.header-home {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+/* Search */
+.header > ul > li.header-search input {
+    display: none;
+}
+
+.header > ul > li.header-home > a {
+    max-width: 90%;
+    width: auto;
+    justify-content: left;
+}
+
+.header > ul > li.header-home > a img {
+    width: auto;
+    max-width: 100%;
+    max-height: 30px;
+}
+
+.header > ul > li.header-account {
+    display: none;
+}
+
+.confidence-points {
+    line-height: 42px;
+    display: block;
+    width: auto;
+    max-width: 1280px;
+    padding-top: 56px;
+    margin: 0 auto;
+}
+
+a.confidence-promo {
+    text-align: center;
+    display: block;
+    background-color: #78BFAF;
+    color: white;
+}
+
+.confidence-delivery {
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.confidence-delivery b.cflag {
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(https://assets.feelunique.com/f_auto,q_auto/assets/img/country-flags/cflags-sprite-64-v2.png) no-repeat;
+    margin: 0 6px 0 0;
+    background-position: 0 -94px;
+    background-size: 20px;
+    width: 20px;
+    height: 15px;
+}
+
+
+@media (min-width: 800px) {
+
+    .confidence-points {
+        display: flex;
+        width: 100%;
+    }
+
+    .confidence-promo,
+    .confidence-delivery {
+        flex-grow: 1;
+    }
+
+}
+
+
+
+/* Desktop */
+@media (min-width: 980px) {
+    .header {
+        position: relative;
+        box-shadow: none;
+        margin: 20px auto 10px;
+        padding: 0 10px;
+    }
+
+    /* Logo */
+
+    .header > ul > li.header-home {
+        margin-left: 2%;
+    }
+    .header > ul > li.header-home > a img {
+        max-width: 100%;
+        max-height: 42px;
+    }
+
+    /* Search */
+    .header > ul > li.header-search {
+        display: flex;
+        flex-grow: 1.75;
+        align-items: center;
+        margin-right: 0.75%;
+    }
+
+    .confidence-points {
+        padding-top: 1px;
+    }
+
+    .header > ul > li.header-search a {
+        background-color: #333A40;
+        color: #fff;
+        height: 42px;
+    }
+
+    .header > ul > li.header-search input {
+        display: block;
+        background-color: #f2f2f2;
+        height: 42px;
+        width: calc(100% - 65px);
+        margin-right: 6px;
+        padding: 0 10px;
+        border: none;
+        font-size: 16px;
+        font-family: 'open sans', sans-serif;
+    }
+
+    .header > ul > li.header-account {
+        display: block;
+        width: auto;
+        margin-right: 0.75%;
+    }
+
+    .header > ul > li.header-account a {
+        width: auto;
+        display: flex;
+        line-height: 56px;
+    }
+
+    li.header-account a .header-welcome {
+        margin-left: 6px;
+    }
+
+    .header > ul > li.header-menu,
+    .header-welcome {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .header-welcome {
+        display: block;
+    }
+
+    .header > ul > li.header-account {
+        margin-right: 2%; 
+    }
+}
+
+
+.count-badge {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #EF5970;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11.5px;
+    text-align: center;
+    padding: 0 3px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.header-bag {
+    position: relative;
+}
+
+.header-bag .count-badge {
+    position: absolute;
+    right: -1px;
+    top: 3px;
+}

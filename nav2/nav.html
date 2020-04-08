@@ -4,6 +4,9 @@
 
 <meta name="viewport" content="width=device-width" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet" />
+<link href="page.css" rel="stylesheet" />
+<link href="svgicon.css" rel="stylesheet" />
+<link href="header.css" rel="stylesheet" />
 <link href="nav.css" rel="stylesheet" />
 
 <svg width="0" height="0" display="none">
@@ -22,6 +25,21 @@
 		<symbol id="chevron" class="svg-icon" viewbox="0 0 32 32">
             <title>chevron</title>
 			<polyline class="st0" points="14,10 20,16 14,22 "/>
+		</symbol>
+		<symbol id="bag" class="svg-icon" viewbox="50 0 32 32">
+            <title>Bag</title>
+            <polygon points="76.5,29 55.5,29 53.95,3.45 78.05,3.45 	"/>
+            <path d="M61.28,9.5C61.41,12,63.46,14,66,14s4.59-2,4.72-4.5"/>
+        </symbol>
+        <symbol id="search" viewbox="100 0 32 32">
+            <title>Search</title>
+            <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 23.4903 84.7107)" cx="114" cy="14" rx="10" ry="10"/>
+            <line x1="121.02" y1="20.98" x2="129.02" y2="28.98"/>
+		</symbol>
+		<symbol id="user" viewbox="150 0 32 32">
+            <title>User</title>
+            <circle cx="166" cy="10.52" r="8.5"/>
+            <path d="M177.71,30c-1.15-5.42-5.95-9.5-11.71-9.5s-10.56,4.08-11.71,9.5"/>
         </symbol>
     </defs>
 </svg>
@@ -32,8 +50,8 @@
 
 	<navigation>
 
-		<ul class="account-menu">
-			<li-menu heading="Hello Jackie (account)">
+		<ul class="main-menu">
+			<li-menu heading="Hello Jackie (account)" class="account-menu">
 				<li-item>Notifications</li-item>
 				<li-item>Account home</li-item>
 				<li-item>Orders</li-item>
@@ -58,11 +76,8 @@
 					<li-item>My Support</li-item>
 				</li-menu>
 				<li-item>Sign Out</li-item>
-			</li-menu>
-		</ul>    
-			
-		<ul class="main-menu">    
-			<li-item highlight="colour-sale">Sale</li-item>
+			</li-menu> 
+			<li-item highlight="colour-sale">Valentine's Day</li-item>
 			<li-item highlight="colour-coral">Brands A-Z</li-item>
 			<li-menu heading="Makeup">
 				<li-menu heading="Complexion">
@@ -328,15 +343,12 @@
 				<li-item>Clearance - Up to 50% Off</li-item>
 				<li-item>All Savings</li-item>
 			</li-menu>
-			<li-item>Marketplace</li-item>
+			<!--<li-item>Marketplace</li-item>-->
 			<li-item>Rewards</li-item>
 			<li-item>Top 9</li-item>
 			<li-item>Blog</li-item>
 
-		</ul>
-
-		<ul class="help-menu">
-			<li-menu heading="Need help?">
+			<li-menu heading="Need help?" class="navigation-help-menu">
 				<li-item>Help Centre</li-item>
 				<li-item>Delivery Information</li-item>
 				<li-item>Returns Policy</li-item>
@@ -345,8 +357,10 @@
 		</ul>
 
 	</navigation>
+
 </div>
 
+<div class="page">
 
 <p>
 Am-tep was the King’s chief craftsman, an artist of consummate skills. It was night, and he lay sleeping on his workshop couch, tired after a handsomely productive evening’s work. But his sleep was restless – perhaps from an intangible tension that had seemed to be in the air. Indeed, he was not certain that he was asleep at all when it happened. Daytime had come – quite suddenly – when his bones told him that surely it must still be night.
@@ -393,8 +407,87 @@ If the heavens had shown such little concern for the Catastrophe, having a statu
 <p>
 Yet Am-tep was still troubled by the question ‘why?’ What deep forces control the behaviour of the world, and why do they sometimes burst forth in violent and seemingly incomprehensible ways? He shared his questions with his grandson, but there were no answers.
 </p>
-
-
+<p>
+A century passed by, and then a millennium, and still there were no
+answers.
+</p>
+<p>
+Amphos the craftsman had lived all his life in the same small town as his
+father and his father before him, and his father’s father before that. He
+made his living constructing beautifully decorated gold bracelets, earrings,
+ceremonial cups, and other fine products of his artistic skills. Such work
+had been the family trade for some forty generations—a line unbroken
+since Am-tep had settled there eleven hundred years before.
+But it was not just artistic skills that had been passed down from
+generation to generation. Am-tep’s questions troubled Amphos just as
+they had troubled Am-tep earlier. The great story of the Catastrophe
+that destroyed an ancient peaceful civilization had been handed down
+from father to son. Am-tep’s perception of the Catastrophe had also
+survived with his descendants. Amphos, too, understood that the heavens
+had a magnitude and stature so great as to be quite unconcerned by that
+terrible event. Nevertheless, the event had had a catastrophic eVect on the
+little people with their cities and their human sacrifices and insignificant
+religious rituals. Thus, by comparison, the event itself must have been the
+result of enormous forces quite unconcerned by those trivial actions of
+human beings. Yet the nature of those forces was as unknown in
+Amphos’s day as it was to Am-tep.
+</p>
+<p>
+Amphos had studied the structure of plants, insects and other small
+animals, and crystalline rocks. His keen eye for observation had served
+him well in his decorative designs. He took an interest in agriculture and
+was fascinated by the growth of wheat and other plants from grain. But
+none of this told him ‘why?’, and he felt unsatisfied. He believed that there
+was indeed reason underlying Nature’s patterns, but he was in no way
+equipped to unravel those reasons.
+</p>
+<p>
+One clear night, Amphos looked up at the heavens, and tried to make
+out from the patterns of stars the shapes of those heroes and heroines who
+formed constellations in the sky. To his humble artist’s eye, those shapes
+made poor resemblances. He could himself have arranged the stars far
+more convincingly. He puzzled over why the gods had not organized the
+stars in a more appropriate way? As they were, the arrangements seemed
+more like scattered grains randomly sowed by a farmer, rather than the
+deliberate design of a god. Then an odd thought overtook him: Do not seek
+for reasons in the speciWc patterns of stars, or of other scattered arrangements of objects; look, instead, for a deeper universal order in the way that
+things behave.
+</p>
+<p>
+Amphos reasoned that we find order, after all, not in the patterns that
+scattered seeds form when they fall to the ground, but in the miraculous
+way that each of those seeds develops into a living plant having a superb
+structure, similar in great detail to one another. We would not try to seek
+the meaning in the precise arrangement of seeds sprinkled on the soil; yet,
+there must be meaning in the hidden mystery of the inner forces controlling the growth of each seed individually, so that each one follows essentially the same wonderful course. Nature’s laws must indeed have a
+superbly organized precision for this to be possible.
+</p>
+<p>
+Amphos became convinced that without precision in the underlying
+laws, there could be no order in the world, whereas much order is indeed
+perceived in the way that things behave. Moreover, there must be precision
+in our ways of thinking about these matters if we are not to be led seriously
+astray.
+</p>
+<p>
+It so happened that word had reached Amphos of a sage who lived in
+another part of the land, and whose beliefs appeared to be in sympathy
+with those of Amphos. According to this sage, one could not rely on the
+teachings and traditions of the past. To be certain of one’s beliefs, it was
+necessary to form precise conclusions by the use of unchallengeable
+reason. The nature of this precision had to be mathematical—ultimately
+dependent on the notion of number and its application to geometric forms.
+Accordingly, it must be number and geometry, not myth and superstition,
+that governed the behaviour of the world.
+</p>
+<p>
+As Am-tep had done a century and a millennium before, Amphos took
+to the sea. He found his way to the city of Croton, where the sage and his
+brotherhood of 571 wise men and 28 wise women were in search of truth.
+After some time, Amphos was accepted into the brotherhood. The name
+of the sage was Pythagoras.
+</p>
+</div>
 
 
 

@@ -1,0 +1,24 @@
+.svgicon {
+    display: inline-block;
+    vertical-align: middle;
+    stroke-width: 1.75;
+    fill: none;
+    stroke: currentColor;
+ }
+  
+.svgicon path,
+.svgicon polygon,
+.svgicon ellipse,
+.svgicon line,
+.svgicon rect {
+    stroke-width: inherit;
+}
+
+.svgicon.svgicon--b {
+    stroke-width: 2.5;
+}
+
+.svgicon use {
+    display: inline-block;
+    vertical-align: middle;
+}
