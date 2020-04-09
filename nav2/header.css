@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     width: 100vw;
-    max-width: 1280px;
+    max-width: none;
     margin: 0 auto;
     height: 56px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.05);
@@ -57,21 +57,26 @@
     justify-content: left;
 }
 
-.header > ul > li.header-home > a img {
+.header > ul > li.header-home > a img,
+.header > ul > li.header-home > a svg {
     width: auto;
     max-width: 100%;
-    max-height: 30px;
+    max-height: 16px;
 }
 
 .header > ul > li.header-account {
     display: none;
 }
 
+.header > ul > li.header-bag {
+    margin-right: 1%;
+}
+
 .confidence-points {
     line-height: 42px;
     display: block;
     width: auto;
-    max-width: 1280px;
+    max-width: none;
     padding-top: 56px;
     margin: 0 auto;
 }
@@ -91,7 +96,7 @@ a.confidence-promo {
 .confidence-delivery b.cflag {
     display: inline-block;
     vertical-align: middle;
-    background: transparent url(https://assets.feelunique.com/f_auto,q_auto/assets/img/country-flags/cflags-sprite-64-v2.png) no-repeat;
+    background: transparent url('https://assets.feelunique.com/f_auto,q_auto/assets/img/country-flags/cflags-sprite-64-v2.png') no-repeat;
     margin: 0 6px 0 0;
     background-position: 0 -94px;
     background-size: 20px;
@@ -121,18 +126,20 @@ a.confidence-promo {
     .header {
         position: relative;
         box-shadow: none;
-        margin: 20px auto 10px;
-        padding: 0 10px;
+        margin: 0 auto 0;
+        padding: 20px 10px 60px;
     }
 
-    /* Logo */
 
+    /* Logo */
     .header > ul > li.header-home {
         margin-left: 2%;
     }
-    .header > ul > li.header-home > a img {
+
+    .header > ul > li.header-home > a img,
+    .header > ul > li.header-home > a svg {
         max-width: 100%;
-        max-height: 42px;
+        max-height: 24px;
     }
 
     /* Search */
@@ -144,7 +151,7 @@ a.confidence-promo {
     }
 
     .confidence-points {
-        padding-top: 1px;
+        padding-top: 0;
     }
 
     .header > ul > li.header-search a {
@@ -165,6 +172,7 @@ a.confidence-promo {
         font-family: 'open sans', sans-serif;
     }
 
+    /* Account */
     .header > ul > li.header-account {
         display: block;
         width: auto;
@@ -189,6 +197,14 @@ a.confidence-promo {
 }
 
 @media (min-width: 1280px) {
+
+
+    .header {
+        padding-right: calc((100vw - 1280px) / 2);
+        padding-left: calc((100vw - 1280px) / 2);
+    }
+
+
     .header-welcome {
         display: block;
     }

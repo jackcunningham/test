@@ -2,20 +2,24 @@
     display: block;
     width: auto;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: none;
     box-sizing: border-box;
-    padding: 20px 4%;
 }
 
 .page p { 
     line-height: 1.5em; 
     font-family: Georgia, serif;
     font-size: 17px;
-    margin: 0.66em 0;
+    margin: 0.66em 4%;
 }
 
 @media (min-width: 1280px) {
-    .page {
-        padding: 20px 2%;
+
+    .page p { 
+        margin: 0.66em 2%;
+        padding-right: calc((100vw - 1280px) / 2);
+        padding-left: calc((100vw - 1280px) / 2);
     }
+
+    
 }

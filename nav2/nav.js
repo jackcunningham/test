@@ -1,3 +1,22 @@
+
+Vue.component('page', {
+	template: `
+		<div class="page" v-bind:class="{ darkmode: darkMode }">
+			<slot></slot>
+			<p>Try toggling <a href="#" @click="togglingDarkMode()">Darkmode</a></p>
+		</div>`,
+	data() {
+		return {
+			darkMode: true
+		}
+	},
+	methods: {
+		togglingDarkMode() {
+			this.darkMode = !this.darkMode
+		}
+	}
+}); 
+
 Vue.component('li-item', {
 	props: ['highlight', 'summary', 'media', 'cta'],
 	template: `
@@ -40,6 +59,11 @@ Vue.component('li-menu', {
 						<use xlink:href="#chevron" />
 					</svg>
 					Back
+				</li>
+				<li class="navigation-mega-close" @click="closeCategory($event)">
+					<svg width="42" height="42" class="svgicon">
+						<use xlink:href="#close" />
+					</svg>
 				</li>
 				<slot></slot>
 			</ul>
@@ -96,7 +120,12 @@ Vue.component('navigation', {
 					</li>
 		
 					<li class="header-home">
-						<a href="/" title="Homepage"><img src="https://assets.feelunique.com/assets/img/feelunique-logo.png" /></a>
+						<a href="/" title="Homepage">
+						<svg height="25" class="svgicon">
+							<use xlink:href="#logo" />
+						</svg>
+						<!--<img src="https://assets.feelunique.com/image/upload/v1586435835/assets/svg/feelunique-logo.svg" />-->
+						</a>
 					</li>
 
 					<li class="header-search">
@@ -172,11 +201,14 @@ Vue.component('navigation', {
 
 new Vue({
 	el: '#root',
+	data: {
+		darkMode: false
+	},
 	methods: {
 		cloneLinkToParentPageOnSubMenu: function() {
 			var subMenus = document.querySelectorAll('.navigation .li-menu');
 			for (i = 0; i < subMenus.length; ++i) {
-				var supressedHomeLinksList = ['Need help?'];
+				var supressedHomeLinksList = ['Need help?', 'Samples', 'Welcome (Account)'];
 				var parentLink = subMenus[i].querySelector('a');
 				var homeLink = parentLink.cloneNode(true);
 				homeLink.innerText = 'All ' + homeLink.innerText.trim();
@@ -187,7 +219,9 @@ new Vue({
 				} 
 				homeLinkLi.classList.add('navigation-subhead');
 			
-				firstItem.after(homeLinkLi);
+				if (firstItem && homeLinkLi) {
+					firstItem.after(homeLinkLi);
+				}
 			}
 		},
 		cloneAccountMenuOnDesktop: function() {

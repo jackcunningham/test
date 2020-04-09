@@ -1,0 +1,57 @@
+
+.darkmode .header {
+    background: #333A40;
+    color: #fff;
+}
+  
+.darkmode .header > ul > li.header-home a,
+.darkmode .header > ul > li.header-account a,
+.darkmode .header > ul > li.header-bag a {
+    color: #fff;
+}
+
+.darkmode .navigation ul.main-menu > li.colour-coral > a { color: #FF7A8E; } /* #EF5970 */
+.darkmode .navigation ul.main-menu > li.colour-sale > a  { color: #E0243A; } /* #DB1130 */
+
+
+.darkmode .header > ul > li.header-search a {
+    background: transparent;
+    color: #fff;
+}
+
+.darkmode .navigationOpen .navigation-matte {
+    background-color: rgba(86, 94, 100, 0.5);
+}
+
+@media (min-width: 980px) {
+
+    .darkmode .navigation {
+        background: #333A40;
+        color: #fff;
+    }
+
+    .darkmode .navigation ul.main-menu > li > a {
+        color: #fff;
+    }
+
+    .darkmode .header > ul > li.header-search a {
+        background: #000;
+        color: #fff;
+    }
+
+    .darkmode ul.main-menu > li.liMenuOpen > a,
+    .darkmode .header > ul > li.header-account a {
+        color: #333A40;
+    }
+
+    .darkmode .header > ul > li.header-account a .header-welcome, 
+    .darkmode .header > ul > li.header-account a svg {
+        color: #fff;
+    }
+
+
+
+}
+
+
+ 
