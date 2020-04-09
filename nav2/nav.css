@@ -232,7 +232,9 @@ a.nav-media-block:hover .nav-media-cta {
     text-decoration: underline;
 }
 
-
+li.navigation-mega-close {
+    display: none;
+}
 
 /* Mega menus */
 @media (min-width: 980px) {
@@ -370,9 +372,6 @@ a.nav-media-block:hover .nav-media-cta {
     }
 
     /* Mega menu close icon */
-    li.navigation-mega-close {
-        display: none;
-    }
     ul.main-menu > li.li-menu.liMenuOpen > ul > li.navigation-mega-close {
         display: flex;
         align-items: center;
