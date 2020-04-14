@@ -22,7 +22,7 @@ body {
 .navigation-matte {
     background-color: rgba(51, 58, 64, 0);
     backdrop-filter: blur(0);
-    height: 100vh;
+    height: 100%;
     width: 56px;
     flex-grow: 1;
     transition: all 0.15s ease;
