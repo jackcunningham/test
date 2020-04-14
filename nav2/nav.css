@@ -200,9 +200,10 @@ a.nav-media-block:hover {
     letter-spacing: 0.035em;
     font-size: 14px;
     line-height: 32px;
-    transform: translateY(21px);
+    /*transform: translateY(21px);*/
     background: #fff;
     padding-right: 1.333em;
+    white-space: nowrap;
 }
 
 .nav-media-img {
@@ -424,11 +425,14 @@ li.navigation-mega-close {
 
     /* Media blocks */
 
-    a.nav-media-block {
+    ul.main-menu > li.li-menu > ul > li > a.nav-media-block {
         line-height: 20px;
+        min-height: 280px;
+        margin: 0;
     }
 
     .nav-media-title {
+        margin-top: 0;
         font-size: 11.5px;
         transform: none;
         background: transparent;

@@ -36,12 +36,12 @@ Vue.component('li-item', {
 	}
 }); 
 
-
 Vue.component('li-menu', {
 	props : ['heading'],
 	template: `
 		<li class="li-menu" 
-			v-bind:class="{ liMenuOpen: isOpen }"
+			:class="{ liMenuOpen: isOpen }"
+			:style="{ menuOffset }"
 			@mouseover="openCategory($event)"
 			@mouseout="closeCategory($event)">
 			
@@ -71,7 +71,13 @@ Vue.component('li-menu', {
 	`,
 	data() {
   		return {
-			isOpen: false
+			isOpen: false,
+			scrollOffset: 0
+		}
+	},
+	computed: {
+		menuOffset() {
+			return `transform: translate(0, ${ this.scrollOffset }px)`
 		}
 	},
 	methods: {
@@ -93,11 +99,15 @@ Vue.component('li-menu', {
 		toggleCategory: function(event) {
 			if (!this.isDesktop()) {
 
-				console.log('toggling');
+
 				event.preventDefault();
 				//event.target.closest('ul').classList.add('isParked');
 
 				// when there is a scroll position, set an offset for the sub menu
+				this.scrollOffset = event.target.closest('ul').scrollTop
+				console.log(this.scrollOffset);
+				console.log(this.menuOffset);
+
 
 				this.isOpen = !this.isOpen
 			}
@@ -237,5 +247,3 @@ new Vue({
 		this.cloneLinkToParentPageOnSubMenu();
 	}
 });
-
-
