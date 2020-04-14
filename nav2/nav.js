@@ -41,7 +41,6 @@ Vue.component('li-menu', {
 	template: `
 		<li class="li-menu" 
 			:class="{ liMenuOpen: isOpen }"
-			:style="{ menuOffset }"
 			@mouseover="openCategory($event)"
 			@mouseout="closeCategory($event)">
 			
@@ -53,7 +52,7 @@ Vue.component('li-menu', {
 				</svg>
 			
 			</a>
-			<ul>
+			<ul v-bind:style="{ menuOffset }">
 				<li @click="toggleCategory($event)" class="navigation-back">
 					<svg width="24" height="24" class="navigation-toggle navigation-back svgicon">
 						<use xlink:href="#chevron" />
