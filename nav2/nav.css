@@ -532,8 +532,8 @@ li.navigation-mega-close {
 
 /* Utilities */
 .colour-coral,
-.colour-coral a,
-.colour-coral a:hover { color: #EF5970; }
+.colour-coral > a,
+.colour-coral > a:hover { color: #EF5970; }
 .colour-sale,
-.colour-sale a,
-.colour-sale a:hover { color: #DB1130; }
+.colour-sale > a,
+.colour-sale > a:hover { color: #DB1130; }

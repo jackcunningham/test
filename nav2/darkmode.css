@@ -40,6 +40,8 @@
     }
 
     .darkmode ul.main-menu > li.liMenuOpen > a,
+    .darkmode ul.main-menu > li.liMenuOpen.colour-coral > a,
+    .darkmode ul.main-menu > li.liMenuOpen.colour-sale > a,
     .darkmode .header > ul > li.header-account a {
         color: #333A40;
     }

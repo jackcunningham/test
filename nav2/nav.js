@@ -37,10 +37,10 @@ Vue.component('li-item', {
 }); 
 
 Vue.component('li-menu', {
-	props : ['heading'],
+	props : ['heading', 'highlight'],
 	template: `
 		<li class="li-menu" 
-			:class="{ liMenuOpen: isOpen }"
+			:class="[highlight,{ liMenuOpen: isOpen }]"
 			@mouseover="openCategory($event)"
 			@mouseout="closeCategory($event)">
 			
@@ -217,7 +217,7 @@ new Vue({
 		cloneLinkToParentPageOnSubMenu: function() {
 			var subMenus = document.querySelectorAll('.navigation .li-menu');
 			for (i = 0; i < subMenus.length; ++i) {
-				var supressedHomeLinksList = ['Need help?', 'Samples', 'Welcome (Account)'];
+				var supressedHomeLinksList = ['Need help?', 'Samples', 'Welcome (Account)', 'Inspire me'];
 				var parentLink = subMenus[i].querySelector('a');
 				var homeLink = parentLink.cloneNode(true);
 				homeLink.innerText = 'All ' + homeLink.innerText.trim();
