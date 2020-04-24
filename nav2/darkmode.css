@@ -11,7 +11,8 @@
 }
 
 .darkmode .navigation ul.main-menu > li.colour-coral > a { color: #FF7A8E; } /* #EF5970 */
-.darkmode .navigation ul.main-menu > li.colour-sale > a  { color: #E0243A; } /* #DB1130 */
+.darkmode li.colour-coral a svg.navigation-toggle { color: #333A40; }
+.darkmode .navigation ul.main-menu > li.colour-sale > a  { color: #F73D36; } /* #DB1130 */
 
 
 .darkmode .header > ul > li.header-search a {

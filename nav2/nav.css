@@ -73,6 +73,7 @@ body {
     background-color: #333A40;
     color: #fff;
     stroke-width: 1;
+    cursor: pointer;
 }
 
 .navigation ul, li {margin: 0; padding: 0; }
@@ -386,6 +387,7 @@ li.navigation-mega-close {
         background: transparent;
         min-width: 0;
         min-height: 0;
+        cursor: pointer;
     }
 
     ul.main-menu > li.li-menu.liMenuOpen > ul > li.navigation-mega-close svg {
@@ -537,3 +539,8 @@ li.navigation-mega-close {
 .colour-sale,
 .colour-sale > a,
 .colour-sale > a:hover { color: #DB1130; }
+
+.colour-coral .navigation-back,
+.colour-sale .navigation-back {
+    color: #333A40;
+}
