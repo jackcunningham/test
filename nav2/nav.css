@@ -5,6 +5,7 @@ body {
     margin: 0;
     background: #fff;
     color: #333A40;
+    height: 100%;
 }
 
 .navigation {
@@ -17,6 +18,7 @@ body {
     transition: transform 0.15s ease;
     transform: translateX(calc(-100% - 56px));
     z-index: 11;
+    height: 100%;
 }
 
 .navigation-matte {
@@ -39,6 +41,9 @@ body {
     overflow: hidden;
     max-width: 375px;
     background: #fff;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .navigation-back {
