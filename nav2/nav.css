@@ -348,7 +348,6 @@ li.navigation-mega-close {
         background-color: #f2f2f2;
         max-height: 0;
         opacity: 0;
-        transition: opacity 0s ease;
         overflow: hidden;
         text-align: left;
     }
@@ -372,10 +371,9 @@ li.navigation-mega-close {
 
     /* Mega menu drop-down style */
     ul.main-menu > li.li-menu.liMenuOpen > ul {
-        max-height: 444px;
-        opacity: 1;
         padding: 2em 4%;
         box-sizing: border-box;
+        animation: dropdown 0.2s ease 0.35s forwards;
     }
 
     /* Mega menu close icon */
@@ -548,4 +546,19 @@ li.navigation-mega-close {
 .colour-coral .navigation-back,
 .colour-sale .navigation-back {
     color: #333A40;
+}
+
+@keyframes dropdown {
+    0% {
+      max-height: 0;
+      opacity: 0;
+    }
+    50% {
+        max-height: 444px;
+        opacity: 0;
+    }
+    100% {
+        max-height: 444px;
+        opacity: 1;
+    }
 }
