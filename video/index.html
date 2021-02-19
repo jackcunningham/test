@@ -11,7 +11,7 @@ body {
 }
 
 video {
-    max-width: 300px;
+    max-width: 100%;
     margin: 1em 0;
 
 }
@@ -25,6 +25,7 @@ video {
 
 <video 
     id="vid1"
+    class="playWhenInView"
     loop="" 
     autoplay="" 
     playsinline="" 
@@ -40,6 +41,7 @@ video {
 
 <video 
     id="vid2"
+    class="playWhenInView"
     loop="" 
     autoplay="" 
     playsinline="" 
@@ -53,24 +55,25 @@ video {
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p><p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p><p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-
 <script>
 
-const video = document.querySelector('#vid2');
+var clips = document.querySelectorAll('video.playWhenInView');
 
-function controlVideo(entries) {
-  entries.map((entry) => {
-    if (entry.isIntersecting) {
-      console.log('play');
-      video.play();
-    } else {
-      console.log('pause');
-      video.pause();
-    }
-  });
-}
+var playVideoWhenOnScreen = new IntersectionObserver(function(entries) {
 
-const listenForVideoInView = new IntersectionObserver(controlVideo);
-listenForVideoInView.observe(video);
+    entries.forEach( function(entry) {
+        if (entry.isIntersecting) {
+            console.log(entry.target.id + ' playing');
+            entry.target.play();
+        } else {
+            console.log(entry.target.id + ' pausing');
+            entry.target.pause();
+        }
+    });
+});
+
+clips.forEach(function(clip) {
+    playVideoWhenOnScreen.observe(clip);
+});
 
 </script>
